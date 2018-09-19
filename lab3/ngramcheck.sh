@@ -40,7 +40,7 @@ done
 #now sort the file and make sure it is identical
 #to the correct output that has been sorted
 sort $filename > "$filename.sorted"
-diff "$filename.sorted" "/u/css/classes/3482/174/lab3/shakespeare.2grams.sorted" > diffs
+diff "$filename.sorted" "/u/css/classes/3482/184/lab3/shakespeare.2grams.sorted" > diffs
 if [ -s diffs ]; then
   printf "There are differences between your output and the correct output\n";
   cat diffs
