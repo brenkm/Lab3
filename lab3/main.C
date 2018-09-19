@@ -51,6 +51,7 @@ int main(int argc, char * argv[])
    string word;
    int ngrams;
    WordList wl;
+   int int1;
 
    usage(argc, argv, ngrams, filename);
 
