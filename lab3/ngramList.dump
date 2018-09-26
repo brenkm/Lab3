@@ -1,0 +1,961 @@
+
+NgramList.o:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <_ZN9NgramListC1EiRK8WordList>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	53                   	push   %rbx
+   5:	48 83 ec 68          	sub    $0x68,%rsp
+   9:	e8 00 00 00 00       	callq  e <_ZN9NgramListC1EiRK8WordList+0xe>
+   e:	48 89 7d a8          	mov    %rdi,-0x58(%rbp)
+  12:	89 75 a4             	mov    %esi,-0x5c(%rbp)
+  15:	48 89 55 98          	mov    %rdx,-0x68(%rbp)
+  19:	48 8b 45 a8          	mov    -0x58(%rbp),%rax
+  1d:	8b 55 a4             	mov    -0x5c(%rbp),%edx
+  20:	89 50 08             	mov    %edx,0x8(%rax)
+  23:	48 c7 45 c0 00 00 00 	movq   $0x0,-0x40(%rbp)
+  2a:	00 
+  2b:	48 8b 45 a8          	mov    -0x58(%rbp),%rax
+  2f:	48 c7 00 00 00 00 00 	movq   $0x0,(%rax)
+  36:	48 8b 45 98          	mov    -0x68(%rbp),%rax
+  3a:	48 89 c7             	mov    %rax,%rdi
+  3d:	e8 00 00 00 00       	callq  42 <_ZN9NgramListC1EiRK8WordList+0x42>
+  42:	48 89 45 c0          	mov    %rax,-0x40(%rbp)
+  46:	e9 85 00 00 00       	jmpq   d0 <_ZN9NgramListC1EiRK8WordList+0xd0>
+  4b:	48 8b 45 98          	mov    -0x68(%rbp),%rax
+  4f:	48 89 c7             	mov    %rax,%rdi
+  52:	e8 00 00 00 00       	callq  57 <_ZN9NgramListC1EiRK8WordList+0x57>
+  57:	48 89 c1             	mov    %rax,%rcx
+  5a:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  5e:	48 8b 55 c0          	mov    -0x40(%rbp),%rdx
+  62:	48 8b 75 a8          	mov    -0x58(%rbp),%rsi
+  66:	48 89 c7             	mov    %rax,%rdi
+  69:	e8 00 00 00 00       	callq  6e <_ZN9NgramListC1EiRK8WordList+0x6e>
+  6e:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+  72:	be 00 00 00 00       	mov    $0x0,%esi
+  77:	48 89 c7             	mov    %rax,%rdi
+  7a:	e8 00 00 00 00       	callq  7f <_ZN9NgramListC1EiRK8WordList+0x7f>
+  7f:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  83:	48 89 c7             	mov    %rax,%rdi
+  86:	e8 00 00 00 00       	callq  8b <_ZN9NgramListC1EiRK8WordList+0x8b>
+  8b:	83 f0 01             	xor    $0x1,%eax
+  8e:	84 c0                	test   %al,%al
+  90:	74 32                	je     c4 <_ZN9NgramListC1EiRK8WordList+0xc4>
+  92:	48 8d 55 b0          	lea    -0x50(%rbp),%rdx
+  96:	48 8d 45 d0          	lea    -0x30(%rbp),%rax
+  9a:	48 89 d6             	mov    %rdx,%rsi
+  9d:	48 89 c7             	mov    %rax,%rdi
+  a0:	e8 00 00 00 00       	callq  a5 <_ZN9NgramListC1EiRK8WordList+0xa5>
+  a5:	48 8d 55 d0          	lea    -0x30(%rbp),%rdx
+  a9:	48 8b 45 a8          	mov    -0x58(%rbp),%rax
+  ad:	48 89 d6             	mov    %rdx,%rsi
+  b0:	48 89 c7             	mov    %rax,%rdi
+  b3:	e8 00 00 00 00       	callq  b8 <_ZN9NgramListC1EiRK8WordList+0xb8>
+  b8:	48 8d 45 d0          	lea    -0x30(%rbp),%rax
+  bc:	48 89 c7             	mov    %rax,%rdi
+  bf:	e8 00 00 00 00       	callq  c4 <_ZN9NgramListC1EiRK8WordList+0xc4>
+  c4:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  c8:	48 89 c7             	mov    %rax,%rdi
+  cb:	e8 00 00 00 00       	callq  d0 <_ZN9NgramListC1EiRK8WordList+0xd0>
+  d0:	48 8b 45 98          	mov    -0x68(%rbp),%rax
+  d4:	48 89 c7             	mov    %rax,%rdi
+  d7:	e8 00 00 00 00       	callq  dc <_ZN9NgramListC1EiRK8WordList+0xdc>
+  dc:	48 89 45 e0          	mov    %rax,-0x20(%rbp)
+  e0:	48 8d 55 e0          	lea    -0x20(%rbp),%rdx
+  e4:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+  e8:	48 89 d6             	mov    %rdx,%rsi
+  eb:	48 89 c7             	mov    %rax,%rdi
+  ee:	e8 00 00 00 00       	callq  f3 <_ZN9NgramListC1EiRK8WordList+0xf3>
+  f3:	84 c0                	test   %al,%al
+  f5:	0f 85 50 ff ff ff    	jne    4b <_ZN9NgramListC1EiRK8WordList+0x4b>
+  fb:	eb 2b                	jmp    128 <_ZN9NgramListC1EiRK8WordList+0x128>
+  fd:	48 89 c3             	mov    %rax,%rbx
+ 100:	48 8d 45 d0          	lea    -0x30(%rbp),%rax
+ 104:	48 89 c7             	mov    %rax,%rdi
+ 107:	e8 00 00 00 00       	callq  10c <_ZN9NgramListC1EiRK8WordList+0x10c>
+ 10c:	eb 03                	jmp    111 <_ZN9NgramListC1EiRK8WordList+0x111>
+ 10e:	48 89 c3             	mov    %rax,%rbx
+ 111:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+ 115:	48 89 c7             	mov    %rax,%rdi
+ 118:	e8 00 00 00 00       	callq  11d <_ZN9NgramListC1EiRK8WordList+0x11d>
+ 11d:	48 89 d8             	mov    %rbx,%rax
+ 120:	48 89 c7             	mov    %rax,%rdi
+ 123:	e8 00 00 00 00       	callq  128 <_ZN9NgramListC1EiRK8WordList+0x128>
+ 128:	48 83 c4 68          	add    $0x68,%rsp
+ 12c:	5b                   	pop    %rbx
+ 12d:	5d                   	pop    %rbp
+ 12e:	c3                   	retq   
+ 12f:	90                   	nop
+
+0000000000000130 <_ZN9NgramListD1Ev>:
+ 130:	55                   	push   %rbp
+ 131:	48 89 e5             	mov    %rsp,%rbp
+ 134:	48 83 ec 20          	sub    $0x20,%rsp
+ 138:	e8 00 00 00 00       	callq  13d <_ZN9NgramListD1Ev+0xd>
+ 13d:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+ 141:	eb 29                	jmp    16c <_ZN9NgramListD1Ev+0x3c>
+ 143:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+ 147:	48 8b 00             	mov    (%rax),%rax
+ 14a:	48 8b 40 10          	mov    0x10(%rax),%rax
+ 14e:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+ 152:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+ 156:	48 8b 00             	mov    (%rax),%rax
+ 159:	48 89 c7             	mov    %rax,%rdi
+ 15c:	e8 00 00 00 00       	callq  161 <_ZN9NgramListD1Ev+0x31>
+ 161:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+ 165:	48 8b 55 f8          	mov    -0x8(%rbp),%rdx
+ 169:	48 89 10             	mov    %rdx,(%rax)
+ 16c:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+ 170:	48 8b 00             	mov    (%rax),%rax
+ 173:	48 85 c0             	test   %rax,%rax
+ 176:	75 cb                	jne    143 <_ZN9NgramListD1Ev+0x13>
+ 178:	c9                   	leaveq 
+ 179:	c3                   	retq   
+
+000000000000017a <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_>:
+ 17a:	55                   	push   %rbp
+ 17b:	48 89 e5             	mov    %rsp,%rbp
+ 17e:	53                   	push   %rbx
+ 17f:	48 81 ec 98 00 00 00 	sub    $0x98,%rsp
+ 186:	e8 00 00 00 00       	callq  18b <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x11>
+ 18b:	48 89 7d 88          	mov    %rdi,-0x78(%rbp)
+ 18f:	48 89 75 80          	mov    %rsi,-0x80(%rbp)
+ 193:	48 89 95 70 ff ff ff 	mov    %rdx,-0x90(%rbp)
+ 19a:	48 89 8d 60 ff ff ff 	mov    %rcx,-0xa0(%rbp)
+ 1a1:	48 8d 45 ae          	lea    -0x52(%rbp),%rax
+ 1a5:	48 89 c7             	mov    %rax,%rdi
+ 1a8:	e8 00 00 00 00       	callq  1ad <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x33>
+ 1ad:	48 8d 55 ae          	lea    -0x52(%rbp),%rdx
+ 1b1:	48 8d 45 a0          	lea    -0x60(%rbp),%rax
+ 1b5:	be 00 00 00 00       	mov    $0x0,%esi
+ 1ba:	48 89 c7             	mov    %rax,%rdi
+ 1bd:	e8 00 00 00 00       	callq  1c2 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x48>
+ 1c2:	48 8d 45 ae          	lea    -0x52(%rbp),%rax
+ 1c6:	48 89 c7             	mov    %rax,%rdi
+ 1c9:	e8 00 00 00 00       	callq  1ce <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x54>
+ 1ce:	c7 45 ec 00 00 00 00 	movl   $0x0,-0x14(%rbp)
+ 1d5:	e9 3a 02 00 00       	jmpq   414 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x29a>
+ 1da:	48 8d 85 70 ff ff ff 	lea    -0x90(%rbp),%rax
+ 1e1:	48 89 c7             	mov    %rax,%rdi
+ 1e4:	e8 00 00 00 00       	callq  1e9 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x6f>
+ 1e9:	48 89 c2             	mov    %rax,%rdx
+ 1ec:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+ 1f0:	48 89 d6             	mov    %rdx,%rsi
+ 1f3:	48 89 c7             	mov    %rax,%rdi
+ 1f6:	e8 00 00 00 00       	callq  1fb <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x81>
+ 1fb:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+ 1ff:	48 89 c7             	mov    %rax,%rdi
+ 202:	e8 00 00 00 00       	callq  207 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x8d>
+ 207:	48 8d 50 ff          	lea    -0x1(%rax),%rdx
+ 20b:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+ 20f:	48 89 d6             	mov    %rdx,%rsi
+ 212:	48 89 c7             	mov    %rax,%rdi
+ 215:	e8 00 00 00 00       	callq  21a <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0xa0>
+ 21a:	0f b6 00             	movzbl (%rax),%eax
+ 21d:	0f be c0             	movsbl %al,%eax
+ 220:	89 c7                	mov    %eax,%edi
+ 222:	e8 00 00 00 00       	callq  227 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0xad>
+ 227:	85 c0                	test   %eax,%eax
+ 229:	75 16                	jne    241 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0xc7>
+ 22b:	48 8b 45 80          	mov    -0x80(%rbp),%rax
+ 22f:	8b 40 08             	mov    0x8(%rax),%eax
+ 232:	83 e8 01             	sub    $0x1,%eax
+ 235:	3b 45 ec             	cmp    -0x14(%rbp),%eax
+ 238:	7e 07                	jle    241 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0xc7>
+ 23a:	b8 01 00 00 00       	mov    $0x1,%eax
+ 23f:	eb 05                	jmp    246 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0xcc>
+ 241:	b8 00 00 00 00       	mov    $0x0,%eax
+ 246:	84 c0                	test   %al,%al
+ 248:	74 37                	je     281 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x107>
+ 24a:	48 8d 45 af          	lea    -0x51(%rbp),%rax
+ 24e:	48 89 c7             	mov    %rax,%rdi
+ 251:	e8 00 00 00 00       	callq  256 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0xdc>
+ 256:	48 8d 55 af          	lea    -0x51(%rbp),%rdx
+ 25a:	48 8b 45 88          	mov    -0x78(%rbp),%rax
+ 25e:	be 00 00 00 00       	mov    $0x0,%esi
+ 263:	48 89 c7             	mov    %rax,%rdi
+ 266:	e8 00 00 00 00       	callq  26b <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0xf1>
+ 26b:	48 8d 45 af          	lea    -0x51(%rbp),%rax
+ 26f:	48 89 c7             	mov    %rax,%rdi
+ 272:	e8 00 00 00 00       	callq  277 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0xfd>
+ 277:	bb 00 00 00 00       	mov    $0x0,%ebx
+ 27c:	e9 79 01 00 00       	jmpq   3fa <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x280>
+ 281:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+ 285:	48 89 c7             	mov    %rax,%rdi
+ 288:	e8 00 00 00 00       	callq  28d <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x113>
+ 28d:	83 e8 01             	sub    $0x1,%eax
+ 290:	89 45 e8             	mov    %eax,-0x18(%rbp)
+ 293:	eb 4b                	jmp    2e0 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x166>
+ 295:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+ 299:	48 89 c7             	mov    %rax,%rdi
+ 29c:	e8 00 00 00 00       	callq  2a1 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x127>
+ 2a1:	48 8d 50 ff          	lea    -0x1(%rax),%rdx
+ 2a5:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+ 2a9:	48 8d 75 90          	lea    -0x70(%rbp),%rsi
+ 2ad:	48 89 d1             	mov    %rdx,%rcx
+ 2b0:	ba 00 00 00 00       	mov    $0x0,%edx
+ 2b5:	48 89 c7             	mov    %rax,%rdi
+ 2b8:	e8 00 00 00 00       	callq  2bd <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x143>
+ 2bd:	48 8d 55 b0          	lea    -0x50(%rbp),%rdx
+ 2c1:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+ 2c5:	48 89 d6             	mov    %rdx,%rsi
+ 2c8:	48 89 c7             	mov    %rax,%rdi
+ 2cb:	e8 00 00 00 00       	callq  2d0 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x156>
+ 2d0:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+ 2d4:	48 89 c7             	mov    %rax,%rdi
+ 2d7:	e8 00 00 00 00       	callq  2dc <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x162>
+ 2dc:	83 6d e8 01          	subl   $0x1,-0x18(%rbp)
+ 2e0:	83 7d e8 00          	cmpl   $0x0,-0x18(%rbp)
+ 2e4:	78 2d                	js     313 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x199>
+ 2e6:	8b 45 e8             	mov    -0x18(%rbp),%eax
+ 2e9:	48 63 d0             	movslq %eax,%rdx
+ 2ec:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+ 2f0:	48 89 d6             	mov    %rdx,%rsi
+ 2f3:	48 89 c7             	mov    %rax,%rdi
+ 2f6:	e8 00 00 00 00       	callq  2fb <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x181>
+ 2fb:	0f b6 00             	movzbl (%rax),%eax
+ 2fe:	0f be c0             	movsbl %al,%eax
+ 301:	89 c7                	mov    %eax,%edi
+ 303:	e8 00 00 00 00       	callq  308 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x18e>
+ 308:	85 c0                	test   %eax,%eax
+ 30a:	75 07                	jne    313 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x199>
+ 30c:	b8 01 00 00 00       	mov    $0x1,%eax
+ 311:	eb 05                	jmp    318 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x19e>
+ 313:	b8 00 00 00 00       	mov    $0x0,%eax
+ 318:	84 c0                	test   %al,%al
+ 31a:	0f 85 75 ff ff ff    	jne    295 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x11b>
+ 320:	83 7d e8 00          	cmpl   $0x0,-0x18(%rbp)
+ 324:	79 37                	jns    35d <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x1e3>
+ 326:	48 8d 45 bf          	lea    -0x41(%rbp),%rax
+ 32a:	48 89 c7             	mov    %rax,%rdi
+ 32d:	e8 00 00 00 00       	callq  332 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x1b8>
+ 332:	48 8d 55 bf          	lea    -0x41(%rbp),%rdx
+ 336:	48 8b 45 88          	mov    -0x78(%rbp),%rax
+ 33a:	be 00 00 00 00       	mov    $0x0,%esi
+ 33f:	48 89 c7             	mov    %rax,%rdi
+ 342:	e8 00 00 00 00       	callq  347 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x1cd>
+ 347:	48 8d 45 bf          	lea    -0x41(%rbp),%rax
+ 34b:	48 89 c7             	mov    %rax,%rdi
+ 34e:	e8 00 00 00 00       	callq  353 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x1d9>
+ 353:	bb 00 00 00 00       	mov    $0x0,%ebx
+ 358:	e9 9d 00 00 00       	jmpq   3fa <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x280>
+ 35d:	48 8d 45 a0          	lea    -0x60(%rbp),%rax
+ 361:	be 00 00 00 00       	mov    $0x0,%esi
+ 366:	48 89 c7             	mov    %rax,%rdi
+ 369:	e8 00 00 00 00       	callq  36e <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x1f4>
+ 36e:	84 c0                	test   %al,%al
+ 370:	74 15                	je     387 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x20d>
+ 372:	48 8d 55 90          	lea    -0x70(%rbp),%rdx
+ 376:	48 8d 45 a0          	lea    -0x60(%rbp),%rax
+ 37a:	48 89 d6             	mov    %rdx,%rsi
+ 37d:	48 89 c7             	mov    %rax,%rdi
+ 380:	e8 00 00 00 00       	callq  385 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x20b>
+ 385:	eb 5a                	jmp    3e1 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x267>
+ 387:	48 8d 45 d0          	lea    -0x30(%rbp),%rax
+ 38b:	48 8d 4d a0          	lea    -0x60(%rbp),%rcx
+ 38f:	ba 00 00 00 00       	mov    $0x0,%edx
+ 394:	48 89 ce             	mov    %rcx,%rsi
+ 397:	48 89 c7             	mov    %rax,%rdi
+ 39a:	e8 00 00 00 00       	callq  39f <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x225>
+ 39f:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+ 3a3:	48 8d 55 90          	lea    -0x70(%rbp),%rdx
+ 3a7:	48 8d 4d d0          	lea    -0x30(%rbp),%rcx
+ 3ab:	48 89 ce             	mov    %rcx,%rsi
+ 3ae:	48 89 c7             	mov    %rax,%rdi
+ 3b1:	e8 00 00 00 00       	callq  3b6 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x23c>
+ 3b6:	48 8d 55 c0          	lea    -0x40(%rbp),%rdx
+ 3ba:	48 8d 45 a0          	lea    -0x60(%rbp),%rax
+ 3be:	48 89 d6             	mov    %rdx,%rsi
+ 3c1:	48 89 c7             	mov    %rax,%rdi
+ 3c4:	e8 00 00 00 00       	callq  3c9 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x24f>
+ 3c9:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+ 3cd:	48 89 c7             	mov    %rax,%rdi
+ 3d0:	e8 00 00 00 00       	callq  3d5 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x25b>
+ 3d5:	48 8d 45 d0          	lea    -0x30(%rbp),%rax
+ 3d9:	48 89 c7             	mov    %rax,%rdi
+ 3dc:	e8 00 00 00 00       	callq  3e1 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x267>
+ 3e1:	48 8d 85 70 ff ff ff 	lea    -0x90(%rbp),%rax
+ 3e8:	be 00 00 00 00       	mov    $0x0,%esi
+ 3ed:	48 89 c7             	mov    %rax,%rdi
+ 3f0:	e8 00 00 00 00       	callq  3f5 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x27b>
+ 3f5:	bb 01 00 00 00       	mov    $0x1,%ebx
+ 3fa:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+ 3fe:	48 89 c7             	mov    %rax,%rdi
+ 401:	e8 00 00 00 00       	callq  406 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x28c>
+ 406:	83 fb 01             	cmp    $0x1,%ebx
+ 409:	0f 85 22 01 00 00    	jne    531 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x3b7>
+ 40f:	90                   	nop
+ 410:	83 45 ec 01          	addl   $0x1,-0x14(%rbp)
+ 414:	48 8b 45 80          	mov    -0x80(%rbp),%rax
+ 418:	8b 40 08             	mov    0x8(%rax),%eax
+ 41b:	3b 45 ec             	cmp    -0x14(%rbp),%eax
+ 41e:	7e 24                	jle    444 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x2ca>
+ 420:	48 8d 95 60 ff ff ff 	lea    -0xa0(%rbp),%rdx
+ 427:	48 8d 85 70 ff ff ff 	lea    -0x90(%rbp),%rax
+ 42e:	48 89 d6             	mov    %rdx,%rsi
+ 431:	48 89 c7             	mov    %rax,%rdi
+ 434:	e8 00 00 00 00       	callq  439 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x2bf>
+ 439:	84 c0                	test   %al,%al
+ 43b:	74 07                	je     444 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x2ca>
+ 43d:	b8 01 00 00 00       	mov    $0x1,%eax
+ 442:	eb 05                	jmp    449 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x2cf>
+ 444:	b8 00 00 00 00       	mov    $0x0,%eax
+ 449:	84 c0                	test   %al,%al
+ 44b:	0f 85 89 fd ff ff    	jne    1da <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x60>
+ 451:	48 8b 45 80          	mov    -0x80(%rbp),%rax
+ 455:	8b 40 08             	mov    0x8(%rax),%eax
+ 458:	3b 45 ec             	cmp    -0x14(%rbp),%eax
+ 45b:	7e 32                	jle    48f <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x315>
+ 45d:	48 8d 45 df          	lea    -0x21(%rbp),%rax
+ 461:	48 89 c7             	mov    %rax,%rdi
+ 464:	e8 00 00 00 00       	callq  469 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x2ef>
+ 469:	48 8d 55 df          	lea    -0x21(%rbp),%rdx
+ 46d:	48 8b 45 88          	mov    -0x78(%rbp),%rax
+ 471:	be 00 00 00 00       	mov    $0x0,%esi
+ 476:	48 89 c7             	mov    %rax,%rdi
+ 479:	e8 00 00 00 00       	callq  47e <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x304>
+ 47e:	48 8d 45 df          	lea    -0x21(%rbp),%rax
+ 482:	48 89 c7             	mov    %rax,%rdi
+ 485:	e8 00 00 00 00       	callq  48a <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x310>
+ 48a:	e9 a2 00 00 00       	jmpq   531 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x3b7>
+ 48f:	eb 46                	jmp    4d7 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x35d>
+ 491:	48 8d 45 a0          	lea    -0x60(%rbp),%rax
+ 495:	48 89 c7             	mov    %rax,%rdi
+ 498:	e8 00 00 00 00       	callq  49d <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x323>
+ 49d:	48 89 c2             	mov    %rax,%rdx
+ 4a0:	48 8d 45 e0          	lea    -0x20(%rbp),%rax
+ 4a4:	48 8d 75 a0          	lea    -0x60(%rbp),%rsi
+ 4a8:	48 89 d1             	mov    %rdx,%rcx
+ 4ab:	ba 01 00 00 00       	mov    $0x1,%edx
+ 4b0:	48 89 c7             	mov    %rax,%rdi
+ 4b3:	e8 00 00 00 00       	callq  4b8 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x33e>
+ 4b8:	48 8d 55 e0          	lea    -0x20(%rbp),%rdx
+ 4bc:	48 8d 45 a0          	lea    -0x60(%rbp),%rax
+ 4c0:	48 89 d6             	mov    %rdx,%rsi
+ 4c3:	48 89 c7             	mov    %rax,%rdi
+ 4c6:	e8 00 00 00 00       	callq  4cb <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x351>
+ 4cb:	48 8d 45 e0          	lea    -0x20(%rbp),%rax
+ 4cf:	48 89 c7             	mov    %rax,%rdi
+ 4d2:	e8 00 00 00 00       	callq  4d7 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x35d>
+ 4d7:	48 8d 45 a0          	lea    -0x60(%rbp),%rax
+ 4db:	48 89 c7             	mov    %rax,%rdi
+ 4de:	e8 00 00 00 00       	callq  4e3 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x369>
+ 4e3:	48 85 c0             	test   %rax,%rax
+ 4e6:	74 29                	je     511 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x397>
+ 4e8:	48 8d 45 a0          	lea    -0x60(%rbp),%rax
+ 4ec:	be 00 00 00 00       	mov    $0x0,%esi
+ 4f1:	48 89 c7             	mov    %rax,%rdi
+ 4f4:	e8 00 00 00 00       	callq  4f9 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x37f>
+ 4f9:	0f b6 00             	movzbl (%rax),%eax
+ 4fc:	0f be c0             	movsbl %al,%eax
+ 4ff:	89 c7                	mov    %eax,%edi
+ 501:	e8 00 00 00 00       	callq  506 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x38c>
+ 506:	85 c0                	test   %eax,%eax
+ 508:	75 07                	jne    511 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x397>
+ 50a:	b8 01 00 00 00       	mov    $0x1,%eax
+ 50f:	eb 05                	jmp    516 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x39c>
+ 511:	b8 00 00 00 00       	mov    $0x0,%eax
+ 516:	84 c0                	test   %al,%al
+ 518:	0f 85 73 ff ff ff    	jne    491 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x317>
+ 51e:	48 8d 55 a0          	lea    -0x60(%rbp),%rdx
+ 522:	48 8b 45 88          	mov    -0x78(%rbp),%rax
+ 526:	48 89 d6             	mov    %rdx,%rsi
+ 529:	48 89 c7             	mov    %rax,%rdi
+ 52c:	e8 00 00 00 00       	callq  531 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x3b7>
+ 531:	48 8d 45 a0          	lea    -0x60(%rbp),%rax
+ 535:	48 89 c7             	mov    %rax,%rdi
+ 538:	e8 00 00 00 00       	callq  53d <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x3c3>
+ 53d:	e9 bc 00 00 00       	jmpq   5fe <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x484>
+ 542:	48 89 c3             	mov    %rax,%rbx
+ 545:	48 8d 45 ae          	lea    -0x52(%rbp),%rax
+ 549:	48 89 c7             	mov    %rax,%rdi
+ 54c:	e8 00 00 00 00       	callq  551 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x3d7>
+ 551:	48 89 d8             	mov    %rbx,%rax
+ 554:	48 89 c7             	mov    %rax,%rdi
+ 557:	e8 00 00 00 00       	callq  55c <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x3e2>
+ 55c:	48 89 c3             	mov    %rax,%rbx
+ 55f:	48 8d 45 af          	lea    -0x51(%rbp),%rax
+ 563:	48 89 c7             	mov    %rax,%rdi
+ 566:	e8 00 00 00 00       	callq  56b <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x3f1>
+ 56b:	eb 47                	jmp    5b4 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x43a>
+ 56d:	48 89 c3             	mov    %rax,%rbx
+ 570:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+ 574:	48 89 c7             	mov    %rax,%rdi
+ 577:	e8 00 00 00 00       	callq  57c <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x402>
+ 57c:	eb 36                	jmp    5b4 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x43a>
+ 57e:	48 89 c3             	mov    %rax,%rbx
+ 581:	48 8d 45 bf          	lea    -0x41(%rbp),%rax
+ 585:	48 89 c7             	mov    %rax,%rdi
+ 588:	e8 00 00 00 00       	callq  58d <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x413>
+ 58d:	eb 25                	jmp    5b4 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x43a>
+ 58f:	48 89 c3             	mov    %rax,%rbx
+ 592:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+ 596:	48 89 c7             	mov    %rax,%rdi
+ 599:	e8 00 00 00 00       	callq  59e <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x424>
+ 59e:	eb 03                	jmp    5a3 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x429>
+ 5a0:	48 89 c3             	mov    %rax,%rbx
+ 5a3:	48 8d 45 d0          	lea    -0x30(%rbp),%rax
+ 5a7:	48 89 c7             	mov    %rax,%rdi
+ 5aa:	e8 00 00 00 00       	callq  5af <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x435>
+ 5af:	eb 03                	jmp    5b4 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x43a>
+ 5b1:	48 89 c3             	mov    %rax,%rbx
+ 5b4:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+ 5b8:	48 89 c7             	mov    %rax,%rdi
+ 5bb:	e8 00 00 00 00       	callq  5c0 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x446>
+ 5c0:	eb 25                	jmp    5e7 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x46d>
+ 5c2:	48 89 c3             	mov    %rax,%rbx
+ 5c5:	48 8d 45 df          	lea    -0x21(%rbp),%rax
+ 5c9:	48 89 c7             	mov    %rax,%rdi
+ 5cc:	e8 00 00 00 00       	callq  5d1 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x457>
+ 5d1:	eb 14                	jmp    5e7 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x46d>
+ 5d3:	48 89 c3             	mov    %rax,%rbx
+ 5d6:	48 8d 45 e0          	lea    -0x20(%rbp),%rax
+ 5da:	48 89 c7             	mov    %rax,%rdi
+ 5dd:	e8 00 00 00 00       	callq  5e2 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x468>
+ 5e2:	eb 03                	jmp    5e7 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x46d>
+ 5e4:	48 89 c3             	mov    %rax,%rbx
+ 5e7:	48 8d 45 a0          	lea    -0x60(%rbp),%rax
+ 5eb:	48 89 c7             	mov    %rax,%rdi
+ 5ee:	e8 00 00 00 00       	callq  5f3 <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x479>
+ 5f3:	48 89 d8             	mov    %rbx,%rax
+ 5f6:	48 89 c7             	mov    %rax,%rdi
+ 5f9:	e8 00 00 00 00       	callq  5fe <_ZN9NgramList12getNextNgramEN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEES7_+0x484>
+ 5fe:	48 8b 45 88          	mov    -0x78(%rbp),%rax
+ 602:	48 81 c4 98 00 00 00 	add    $0x98,%rsp
+ 609:	5b                   	pop    %rbx
+ 60a:	5d                   	pop    %rbp
+ 60b:	c3                   	retq   
+
+000000000000060c <_ZN9NgramList11insertNgramESs>:
+ 60c:	55                   	push   %rbp
+ 60d:	48 89 e5             	mov    %rsp,%rbp
+ 610:	41 54                	push   %r12
+ 612:	53                   	push   %rbx
+ 613:	48 83 ec 20          	sub    $0x20,%rsp
+ 617:	e8 00 00 00 00       	callq  61c <_ZN9NgramList11insertNgramESs+0x10>
+ 61c:	48 89 7d d8          	mov    %rdi,-0x28(%rbp)
+ 620:	48 89 75 d0          	mov    %rsi,-0x30(%rbp)
+ 624:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+ 628:	48 8b 00             	mov    (%rax),%rax
+ 62b:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+ 62f:	bf 18 00 00 00       	mov    $0x18,%edi
+ 634:	e8 00 00 00 00       	callq  639 <_ZN9NgramList11insertNgramESs+0x2d>
+ 639:	48 89 c3             	mov    %rax,%rbx
+ 63c:	48 c7 03 00 00 00 00 	movq   $0x0,(%rbx)
+ 643:	c7 43 08 00 00 00 00 	movl   $0x0,0x8(%rbx)
+ 64a:	48 c7 43 10 00 00 00 	movq   $0x0,0x10(%rbx)
+ 651:	00 
+ 652:	48 89 df             	mov    %rbx,%rdi
+ 655:	e8 00 00 00 00       	callq  65a <_ZN9NgramList11insertNgramESs+0x4e>
+ 65a:	48 89 5d e0          	mov    %rbx,-0x20(%rbp)
+ 65e:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+ 662:	48 8b 55 d0          	mov    -0x30(%rbp),%rdx
+ 666:	48 89 d6             	mov    %rdx,%rsi
+ 669:	48 89 c7             	mov    %rax,%rdi
+ 66c:	e8 00 00 00 00       	callq  671 <_ZN9NgramList11insertNgramESs+0x65>
+ 671:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+ 675:	c7 40 08 01 00 00 00 	movl   $0x1,0x8(%rax)
+ 67c:	eb 36                	jmp    6b4 <_ZN9NgramList11insertNgramESs+0xa8>
+ 67e:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+ 682:	48 8b 55 d0          	mov    -0x30(%rbp),%rdx
+ 686:	48 89 d6             	mov    %rdx,%rsi
+ 689:	48 89 c7             	mov    %rax,%rdi
+ 68c:	e8 00 00 00 00       	callq  691 <_ZN9NgramList11insertNgramESs+0x85>
+ 691:	84 c0                	test   %al,%al
+ 693:	74 13                	je     6a8 <_ZN9NgramList11insertNgramESs+0x9c>
+ 695:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+ 699:	8b 40 08             	mov    0x8(%rax),%eax
+ 69c:	8d 50 01             	lea    0x1(%rax),%edx
+ 69f:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+ 6a3:	89 50 08             	mov    %edx,0x8(%rax)
+ 6a6:	eb 45                	jmp    6ed <_ZN9NgramList11insertNgramESs+0xe1>
+ 6a8:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+ 6ac:	48 8b 40 10          	mov    0x10(%rax),%rax
+ 6b0:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+ 6b4:	48 83 7d e8 00       	cmpq   $0x0,-0x18(%rbp)
+ 6b9:	75 c3                	jne    67e <_ZN9NgramList11insertNgramESs+0x72>
+ 6bb:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+ 6bf:	48 8b 10             	mov    (%rax),%rdx
+ 6c2:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+ 6c6:	48 89 50 10          	mov    %rdx,0x10(%rax)
+ 6ca:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+ 6ce:	48 8b 55 e0          	mov    -0x20(%rbp),%rdx
+ 6d2:	48 89 10             	mov    %rdx,(%rax)
+ 6d5:	eb 16                	jmp    6ed <_ZN9NgramList11insertNgramESs+0xe1>
+ 6d7:	49 89 c4             	mov    %rax,%r12
+ 6da:	48 89 df             	mov    %rbx,%rdi
+ 6dd:	e8 00 00 00 00       	callq  6e2 <_ZN9NgramList11insertNgramESs+0xd6>
+ 6e2:	4c 89 e0             	mov    %r12,%rax
+ 6e5:	48 89 c7             	mov    %rax,%rdi
+ 6e8:	e8 00 00 00 00       	callq  6ed <_ZN9NgramList11insertNgramESs+0xe1>
+ 6ed:	48 83 c4 20          	add    $0x20,%rsp
+ 6f1:	5b                   	pop    %rbx
+ 6f2:	41 5c                	pop    %r12
+ 6f4:	5d                   	pop    %rbp
+ 6f5:	c3                   	retq   
+
+00000000000006f6 <_ZN9NgramList11sortByCountEv>:
+ 6f6:	55                   	push   %rbp
+ 6f7:	48 89 e5             	mov    %rsp,%rbp
+ 6fa:	53                   	push   %rbx
+ 6fb:	48 83 ec 48          	sub    $0x48,%rsp
+ 6ff:	e8 00 00 00 00       	callq  704 <_ZN9NgramList11sortByCountEv+0xe>
+ 704:	48 89 7d b8          	mov    %rdi,-0x48(%rbp)
+ 708:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+ 70c:	48 8b 00             	mov    (%rax),%rax
+ 70f:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+ 713:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+ 717:	48 89 c7             	mov    %rax,%rdi
+ 71a:	e8 00 00 00 00       	callq  71f <_ZN9NgramList11sortByCountEv+0x29>
+ 71f:	e9 b4 00 00 00       	jmpq   7d8 <_ZN9NgramList11sortByCountEv+0xe2>
+ 724:	48 8b 45 b8          	mov    -0x48(%rbp),%rax
+ 728:	48 8b 00             	mov    (%rax),%rax
+ 72b:	48 89 45 e0          	mov    %rax,-0x20(%rbp)
+ 72f:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+ 733:	48 8b 40 10          	mov    0x10(%rax),%rax
+ 737:	48 89 45 d8          	mov    %rax,-0x28(%rbp)
+ 73b:	e9 81 00 00 00       	jmpq   7c1 <_ZN9NgramList11sortByCountEv+0xcb>
+ 740:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+ 744:	8b 50 08             	mov    0x8(%rax),%edx
+ 747:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+ 74b:	8b 40 08             	mov    0x8(%rax),%eax
+ 74e:	39 c2                	cmp    %eax,%edx
+ 750:	7e 5b                	jle    7ad <_ZN9NgramList11sortByCountEv+0xb7>
+ 752:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+ 756:	8b 40 08             	mov    0x8(%rax),%eax
+ 759:	89 45 d4             	mov    %eax,-0x2c(%rbp)
+ 75c:	48 8b 55 e0          	mov    -0x20(%rbp),%rdx
+ 760:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+ 764:	48 89 d6             	mov    %rdx,%rsi
+ 767:	48 89 c7             	mov    %rax,%rdi
+ 76a:	e8 00 00 00 00       	callq  76f <_ZN9NgramList11sortByCountEv+0x79>
+ 76f:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+ 773:	8b 50 08             	mov    0x8(%rax),%edx
+ 776:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+ 77a:	89 50 08             	mov    %edx,0x8(%rax)
+ 77d:	48 8b 55 d8          	mov    -0x28(%rbp),%rdx
+ 781:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+ 785:	48 89 d6             	mov    %rdx,%rsi
+ 788:	48 89 c7             	mov    %rax,%rdi
+ 78b:	e8 00 00 00 00       	callq  790 <_ZN9NgramList11sortByCountEv+0x9a>
+ 790:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+ 794:	8b 55 d4             	mov    -0x2c(%rbp),%edx
+ 797:	89 50 08             	mov    %edx,0x8(%rax)
+ 79a:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+ 79e:	48 8d 55 c0          	lea    -0x40(%rbp),%rdx
+ 7a2:	48 89 d6             	mov    %rdx,%rsi
+ 7a5:	48 89 c7             	mov    %rax,%rdi
+ 7a8:	e8 00 00 00 00       	callq  7ad <_ZN9NgramList11sortByCountEv+0xb7>
+ 7ad:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+ 7b1:	48 89 45 e0          	mov    %rax,-0x20(%rbp)
+ 7b5:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+ 7b9:	48 8b 40 10          	mov    0x10(%rax),%rax
+ 7bd:	48 89 45 d8          	mov    %rax,-0x28(%rbp)
+ 7c1:	48 83 7d d8 00       	cmpq   $0x0,-0x28(%rbp)
+ 7c6:	0f 85 74 ff ff ff    	jne    740 <_ZN9NgramList11sortByCountEv+0x4a>
+ 7cc:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+ 7d0:	48 8b 40 10          	mov    0x10(%rax),%rax
+ 7d4:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+ 7d8:	48 83 7d e8 00       	cmpq   $0x0,-0x18(%rbp)
+ 7dd:	0f 85 41 ff ff ff    	jne    724 <_ZN9NgramList11sortByCountEv+0x2e>
+ 7e3:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+ 7e7:	48 89 c7             	mov    %rax,%rdi
+ 7ea:	e8 00 00 00 00       	callq  7ef <_ZN9NgramList11sortByCountEv+0xf9>
+ 7ef:	eb 1a                	jmp    80b <_ZN9NgramList11sortByCountEv+0x115>
+ 7f1:	48 89 c3             	mov    %rax,%rbx
+ 7f4:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+ 7f8:	48 89 c7             	mov    %rax,%rdi
+ 7fb:	e8 00 00 00 00       	callq  800 <_ZN9NgramList11sortByCountEv+0x10a>
+ 800:	48 89 d8             	mov    %rbx,%rax
+ 803:	48 89 c7             	mov    %rax,%rdi
+ 806:	e8 00 00 00 00       	callq  80b <_ZN9NgramList11sortByCountEv+0x115>
+ 80b:	48 83 c4 48          	add    $0x48,%rsp
+ 80f:	5b                   	pop    %rbx
+ 810:	5d                   	pop    %rbp
+ 811:	c3                   	retq   
+
+0000000000000812 <_ZlsRSoRK9NgramList>:
+ 812:	55                   	push   %rbp
+ 813:	48 89 e5             	mov    %rsp,%rbp
+ 816:	53                   	push   %rbx
+ 817:	48 83 ec 28          	sub    $0x28,%rsp
+ 81b:	e8 00 00 00 00       	callq  820 <_ZlsRSoRK9NgramList+0xe>
+ 820:	48 89 7d d8          	mov    %rdi,-0x28(%rbp)
+ 824:	48 89 75 d0          	mov    %rsi,-0x30(%rbp)
+ 828:	48 8b 45 d0          	mov    -0x30(%rbp),%rax
+ 82c:	8b 58 08             	mov    0x8(%rax),%ebx
+ 82f:	be 00 00 00 00       	mov    $0x0,%esi
+ 834:	bf 00 00 00 00       	mov    $0x0,%edi
+ 839:	e8 00 00 00 00       	callq  83e <_ZlsRSoRK9NgramList+0x2c>
+ 83e:	89 de                	mov    %ebx,%esi
+ 840:	48 89 c7             	mov    %rax,%rdi
+ 843:	e8 00 00 00 00       	callq  848 <_ZlsRSoRK9NgramList+0x36>
+ 848:	be 00 00 00 00       	mov    $0x0,%esi
+ 84d:	48 89 c7             	mov    %rax,%rdi
+ 850:	e8 00 00 00 00       	callq  855 <_ZlsRSoRK9NgramList+0x43>
+ 855:	be 00 00 00 00       	mov    $0x0,%esi
+ 85a:	bf 00 00 00 00       	mov    $0x0,%edi
+ 85f:	e8 00 00 00 00       	callq  864 <_ZlsRSoRK9NgramList+0x52>
+ 864:	48 8b 45 d0          	mov    -0x30(%rbp),%rax
+ 868:	48 8b 00             	mov    (%rax),%rax
+ 86b:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+ 86f:	eb 48                	jmp    8b9 <_ZlsRSoRK9NgramList+0xa7>
+ 871:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+ 875:	8b 58 08             	mov    0x8(%rax),%ebx
+ 878:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+ 87c:	48 89 c6             	mov    %rax,%rsi
+ 87f:	bf 00 00 00 00       	mov    $0x0,%edi
+ 884:	e8 00 00 00 00       	callq  889 <_ZlsRSoRK9NgramList+0x77>
+ 889:	be 00 00 00 00       	mov    $0x0,%esi
+ 88e:	48 89 c7             	mov    %rax,%rdi
+ 891:	e8 00 00 00 00       	callq  896 <_ZlsRSoRK9NgramList+0x84>
+ 896:	89 de                	mov    %ebx,%esi
+ 898:	48 89 c7             	mov    %rax,%rdi
+ 89b:	e8 00 00 00 00       	callq  8a0 <_ZlsRSoRK9NgramList+0x8e>
+ 8a0:	be 00 00 00 00       	mov    $0x0,%esi
+ 8a5:	48 89 c7             	mov    %rax,%rdi
+ 8a8:	e8 00 00 00 00       	callq  8ad <_ZlsRSoRK9NgramList+0x9b>
+ 8ad:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+ 8b1:	48 8b 40 10          	mov    0x10(%rax),%rax
+ 8b5:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+ 8b9:	48 83 7d e8 00       	cmpq   $0x0,-0x18(%rbp)
+ 8be:	75 b1                	jne    871 <_ZlsRSoRK9NgramList+0x5f>
+ 8c0:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+ 8c4:	48 83 c4 28          	add    $0x28,%rsp
+ 8c8:	5b                   	pop    %rbx
+ 8c9:	5d                   	pop    %rbp
+ 8ca:	c3                   	retq   
+
+00000000000008cb <_Z41__static_initialization_and_destruction_0ii>:
+ 8cb:	55                   	push   %rbp
+ 8cc:	48 89 e5             	mov    %rsp,%rbp
+ 8cf:	48 83 ec 10          	sub    $0x10,%rsp
+ 8d3:	e8 00 00 00 00       	callq  8d8 <_Z41__static_initialization_and_destruction_0ii+0xd>
+ 8d8:	89 7d fc             	mov    %edi,-0x4(%rbp)
+ 8db:	89 75 f8             	mov    %esi,-0x8(%rbp)
+ 8de:	83 7d fc 01          	cmpl   $0x1,-0x4(%rbp)
+ 8e2:	75 27                	jne    90b <_Z41__static_initialization_and_destruction_0ii+0x40>
+ 8e4:	81 7d f8 ff ff 00 00 	cmpl   $0xffff,-0x8(%rbp)
+ 8eb:	75 1e                	jne    90b <_Z41__static_initialization_and_destruction_0ii+0x40>
+ 8ed:	bf 00 00 00 00       	mov    $0x0,%edi
+ 8f2:	e8 00 00 00 00       	callq  8f7 <_Z41__static_initialization_and_destruction_0ii+0x2c>
+ 8f7:	ba 00 00 00 00       	mov    $0x0,%edx
+ 8fc:	be 00 00 00 00       	mov    $0x0,%esi
+ 901:	bf 00 00 00 00       	mov    $0x0,%edi
+ 906:	e8 00 00 00 00       	callq  90b <_Z41__static_initialization_and_destruction_0ii+0x40>
+ 90b:	c9                   	leaveq 
+ 90c:	c3                   	retq   
+
+000000000000090d <_GLOBAL__sub_I__ZN9NgramListC2EiRK8WordList>:
+ 90d:	55                   	push   %rbp
+ 90e:	48 89 e5             	mov    %rsp,%rbp
+ 911:	e8 00 00 00 00       	callq  916 <_GLOBAL__sub_I__ZN9NgramListC2EiRK8WordList+0x9>
+ 916:	be ff ff 00 00       	mov    $0xffff,%esi
+ 91b:	bf 01 00 00 00       	mov    $0x1,%edi
+ 920:	e8 a6 ff ff ff       	callq  8cb <_Z41__static_initialization_and_destruction_0ii>
+ 925:	5d                   	pop    %rbp
+ 926:	c3                   	retq   
+
+Disassembly of section .text._ZNSt11char_traitsIcE7compareEPKcS2_m:
+
+0000000000000000 <_ZNSt11char_traitsIcE7compareEPKcS2_m>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	48 83 ec 20          	sub    $0x20,%rsp
+   8:	e8 00 00 00 00       	callq  d <_ZNSt11char_traitsIcE7compareEPKcS2_m+0xd>
+   d:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+  11:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+  15:	48 89 55 e8          	mov    %rdx,-0x18(%rbp)
+  19:	48 8b 55 e8          	mov    -0x18(%rbp),%rdx
+  1d:	48 8b 4d f0          	mov    -0x10(%rbp),%rcx
+  21:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+  25:	48 89 ce             	mov    %rcx,%rsi
+  28:	48 89 c7             	mov    %rax,%rdi
+  2b:	e8 00 00 00 00       	callq  30 <_ZNSt11char_traitsIcE7compareEPKcS2_m+0x30>
+  30:	c9                   	leaveq 
+  31:	c3                   	retq   
+
+Disassembly of section .text._ZN9NgramList5NgramC2Ev:
+
+0000000000000000 <_ZN9NgramList5NgramC1Ev>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	48 83 ec 10          	sub    $0x10,%rsp
+   8:	e8 00 00 00 00       	callq  d <_ZN9NgramList5NgramC1Ev+0xd>
+   d:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+  11:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+  15:	48 89 c7             	mov    %rax,%rdi
+  18:	e8 00 00 00 00       	callq  1d <_ZN9NgramList5NgramC1Ev+0x1d>
+  1d:	c9                   	leaveq 
+  1e:	c3                   	retq   
+
+Disassembly of section .text._ZNKSt6vectorISsSaISsEE5beginEv:
+
+0000000000000000 <_ZNKSt6vectorISsSaISsEE5beginEv>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	48 83 ec 20          	sub    $0x20,%rsp
+   8:	e8 00 00 00 00       	callq  d <_ZNKSt6vectorISsSaISsEE5beginEv+0xd>
+   d:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+  11:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  15:	48 8b 00             	mov    (%rax),%rax
+  18:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+  1c:	48 8d 55 f8          	lea    -0x8(%rbp),%rdx
+  20:	48 8d 45 f0          	lea    -0x10(%rbp),%rax
+  24:	48 89 d6             	mov    %rdx,%rsi
+  27:	48 89 c7             	mov    %rax,%rdi
+  2a:	e8 00 00 00 00       	callq  2f <_ZNKSt6vectorISsSaISsEE5beginEv+0x2f>
+  2f:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+  33:	c9                   	leaveq 
+  34:	c3                   	retq   
+
+Disassembly of section .text._ZNKSt6vectorISsSaISsEE3endEv:
+
+0000000000000000 <_ZNKSt6vectorISsSaISsEE3endEv>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	48 83 ec 20          	sub    $0x20,%rsp
+   8:	e8 00 00 00 00       	callq  d <_ZNKSt6vectorISsSaISsEE3endEv+0xd>
+   d:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+  11:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  15:	48 8b 40 08          	mov    0x8(%rax),%rax
+  19:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+  1d:	48 8d 55 f8          	lea    -0x8(%rbp),%rdx
+  21:	48 8d 45 f0          	lea    -0x10(%rbp),%rax
+  25:	48 89 d6             	mov    %rdx,%rsi
+  28:	48 89 c7             	mov    %rax,%rdi
+  2b:	e8 00 00 00 00       	callq  30 <_ZNKSt6vectorISsSaISsEE3endEv+0x30>
+  30:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+  34:	c9                   	leaveq 
+  35:	c3                   	retq   
+
+Disassembly of section .text._ZN9__gnu_cxxneIPKSsSt6vectorISsSaISsEEEEbRKNS_17__normal_iteratorIT_T0_EESB_:
+
+0000000000000000 <_ZN9__gnu_cxxneIPKSsSt6vectorISsSaISsEEEEbRKNS_17__normal_iteratorIT_T0_EESB_>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	53                   	push   %rbx
+   5:	48 83 ec 18          	sub    $0x18,%rsp
+   9:	e8 00 00 00 00       	callq  e <_ZN9__gnu_cxxneIPKSsSt6vectorISsSaISsEEEEbRKNS_17__normal_iteratorIT_T0_EESB_+0xe>
+   e:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+  12:	48 89 75 e0          	mov    %rsi,-0x20(%rbp)
+  16:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  1a:	48 89 c7             	mov    %rax,%rdi
+  1d:	e8 00 00 00 00       	callq  22 <_ZN9__gnu_cxxneIPKSsSt6vectorISsSaISsEEEEbRKNS_17__normal_iteratorIT_T0_EESB_+0x22>
+  22:	48 8b 18             	mov    (%rax),%rbx
+  25:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+  29:	48 89 c7             	mov    %rax,%rdi
+  2c:	e8 00 00 00 00       	callq  31 <_ZN9__gnu_cxxneIPKSsSt6vectorISsSaISsEEEEbRKNS_17__normal_iteratorIT_T0_EESB_+0x31>
+  31:	48 8b 00             	mov    (%rax),%rax
+  34:	48 39 c3             	cmp    %rax,%rbx
+  37:	0f 95 c0             	setne  %al
+  3a:	48 83 c4 18          	add    $0x18,%rsp
+  3e:	5b                   	pop    %rbx
+  3f:	5d                   	pop    %rbp
+  40:	c3                   	retq   
+
+Disassembly of section .text._ZN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEppEi:
+
+0000000000000000 <_ZN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEppEi>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	48 83 ec 20          	sub    $0x20,%rsp
+   8:	e8 00 00 00 00       	callq  d <_ZN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEppEi+0xd>
+   d:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+  11:	89 75 e4             	mov    %esi,-0x1c(%rbp)
+  14:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  18:	48 8b 00             	mov    (%rax),%rax
+  1b:	48 8d 48 08          	lea    0x8(%rax),%rcx
+  1f:	48 8b 55 e8          	mov    -0x18(%rbp),%rdx
+  23:	48 89 0a             	mov    %rcx,(%rdx)
+  26:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+  2a:	48 8d 55 f8          	lea    -0x8(%rbp),%rdx
+  2e:	48 8d 45 f0          	lea    -0x10(%rbp),%rax
+  32:	48 89 d6             	mov    %rdx,%rsi
+  35:	48 89 c7             	mov    %rax,%rdi
+  38:	e8 00 00 00 00       	callq  3d <_ZN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEppEi+0x3d>
+  3d:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+  41:	c9                   	leaveq 
+  42:	c3                   	retq   
+
+Disassembly of section .text._ZNK9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEdeEv:
+
+0000000000000000 <_ZNK9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEdeEv>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	48 83 ec 08          	sub    $0x8,%rsp
+   8:	e8 00 00 00 00       	callq  d <_ZNK9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEdeEv+0xd>
+   d:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+  11:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+  15:	48 8b 00             	mov    (%rax),%rax
+  18:	c9                   	leaveq 
+  19:	c3                   	retq   
+
+Disassembly of section .text._ZSteqIcSt11char_traitsIcESaIcEEbRKSbIT_T0_T1_EPKS3_:
+
+0000000000000000 <_ZSteqIcSt11char_traitsIcESaIcEEbRKSbIT_T0_T1_EPKS3_>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	48 83 ec 10          	sub    $0x10,%rsp
+   8:	e8 00 00 00 00       	callq  d <_ZSteqIcSt11char_traitsIcESaIcEEbRKSbIT_T0_T1_EPKS3_+0xd>
+   d:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+  11:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+  15:	48 8b 55 f0          	mov    -0x10(%rbp),%rdx
+  19:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+  1d:	48 89 d6             	mov    %rdx,%rsi
+  20:	48 89 c7             	mov    %rax,%rdi
+  23:	e8 00 00 00 00       	callq  28 <_ZSteqIcSt11char_traitsIcESaIcEEbRKSbIT_T0_T1_EPKS3_+0x28>
+  28:	85 c0                	test   %eax,%eax
+  2a:	0f 94 c0             	sete   %al
+  2d:	c9                   	leaveq 
+  2e:	c3                   	retq   
+
+Disassembly of section .text._ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_ERKS6_PKS3_:
+
+0000000000000000 <_ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_ERKS6_PKS3_>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	53                   	push   %rbx
+   5:	48 83 ec 28          	sub    $0x28,%rsp
+   9:	e8 00 00 00 00       	callq  e <_ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_ERKS6_PKS3_+0xe>
+   e:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+  12:	48 89 75 e0          	mov    %rsi,-0x20(%rbp)
+  16:	48 89 55 d8          	mov    %rdx,-0x28(%rbp)
+  1a:	48 8b 55 e0          	mov    -0x20(%rbp),%rdx
+  1e:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  22:	48 89 d6             	mov    %rdx,%rsi
+  25:	48 89 c7             	mov    %rax,%rdi
+  28:	e8 00 00 00 00       	callq  2d <_ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_ERKS6_PKS3_+0x2d>
+  2d:	48 8b 55 d8          	mov    -0x28(%rbp),%rdx
+  31:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  35:	48 89 d6             	mov    %rdx,%rsi
+  38:	48 89 c7             	mov    %rax,%rdi
+  3b:	e8 00 00 00 00       	callq  40 <_ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_ERKS6_PKS3_+0x40>
+  40:	eb 1a                	jmp    5c <_ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_ERKS6_PKS3_+0x5c>
+  42:	48 89 c3             	mov    %rax,%rbx
+  45:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  49:	48 89 c7             	mov    %rax,%rdi
+  4c:	e8 00 00 00 00       	callq  51 <_ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_ERKS6_PKS3_+0x51>
+  51:	48 89 d8             	mov    %rbx,%rax
+  54:	48 89 c7             	mov    %rax,%rdi
+  57:	e8 00 00 00 00       	callq  5c <_ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_ERKS6_PKS3_+0x5c>
+  5c:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  60:	48 83 c4 28          	add    $0x28,%rsp
+  64:	5b                   	pop    %rbx
+  65:	5d                   	pop    %rbp
+  66:	c3                   	retq   
+
+Disassembly of section .text._ZSt4moveIRSsEONSt16remove_referenceIT_E4typeEOS2_:
+
+0000000000000000 <_ZSt4moveIRSsEONSt16remove_referenceIT_E4typeEOS2_>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	48 83 ec 08          	sub    $0x8,%rsp
+   8:	e8 00 00 00 00       	callq  d <_ZSt4moveIRSsEONSt16remove_referenceIT_E4typeEOS2_+0xd>
+   d:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+  11:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+  15:	c9                   	leaveq 
+  16:	c3                   	retq   
+
+Disassembly of section .text._ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_EOS6_RKS6_:
+
+0000000000000000 <_ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_EOS6_RKS6_>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	48 83 ec 20          	sub    $0x20,%rsp
+   8:	e8 00 00 00 00       	callq  d <_ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_EOS6_RKS6_+0xd>
+   d:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+  11:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+  15:	48 89 55 e8          	mov    %rdx,-0x18(%rbp)
+  19:	48 8b 55 e8          	mov    -0x18(%rbp),%rdx
+  1d:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+  21:	48 89 d6             	mov    %rdx,%rsi
+  24:	48 89 c7             	mov    %rax,%rdi
+  27:	e8 00 00 00 00       	callq  2c <_ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_EOS6_RKS6_+0x2c>
+  2c:	48 89 c7             	mov    %rax,%rdi
+  2f:	e8 00 00 00 00       	callq  34 <_ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_EOS6_RKS6_+0x34>
+  34:	48 89 c2             	mov    %rax,%rdx
+  37:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+  3b:	48 89 d6             	mov    %rdx,%rsi
+  3e:	48 89 c7             	mov    %rax,%rdi
+  41:	e8 00 00 00 00       	callq  46 <_ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_EOS6_RKS6_+0x46>
+  46:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+  4a:	c9                   	leaveq 
+  4b:	c3                   	retq   
+
+Disassembly of section .text._ZSteqIcEN9__gnu_cxx11__enable_ifIXsrSt9__is_charIT_E7__valueEbE6__typeERKSbIS3_St11char_traitsIS3_ESaIS3_EESC_:
+
+0000000000000000 <_ZSteqIcEN9__gnu_cxx11__enable_ifIXsrSt9__is_charIT_E7__valueEbE6__typeERKSbIS3_St11char_traitsIS3_ESaIS3_EESC_>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	41 54                	push   %r12
+   6:	53                   	push   %rbx
+   7:	48 83 ec 10          	sub    $0x10,%rsp
+   b:	e8 00 00 00 00       	callq  10 <_ZSteqIcEN9__gnu_cxx11__enable_ifIXsrSt9__is_charIT_E7__valueEbE6__typeERKSbIS3_St11char_traitsIS3_ESaIS3_EESC_+0x10>
+  10:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+  14:	48 89 75 e0          	mov    %rsi,-0x20(%rbp)
+  18:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  1c:	48 89 c7             	mov    %rax,%rdi
+  1f:	e8 00 00 00 00       	callq  24 <_ZSteqIcEN9__gnu_cxx11__enable_ifIXsrSt9__is_charIT_E7__valueEbE6__typeERKSbIS3_St11char_traitsIS3_ESaIS3_EESC_+0x24>
+  24:	48 89 c3             	mov    %rax,%rbx
+  27:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+  2b:	48 89 c7             	mov    %rax,%rdi
+  2e:	e8 00 00 00 00       	callq  33 <_ZSteqIcEN9__gnu_cxx11__enable_ifIXsrSt9__is_charIT_E7__valueEbE6__typeERKSbIS3_St11char_traitsIS3_ESaIS3_EESC_+0x33>
+  33:	48 39 c3             	cmp    %rax,%rbx
+  36:	75 43                	jne    7b <_ZSteqIcEN9__gnu_cxx11__enable_ifIXsrSt9__is_charIT_E7__valueEbE6__typeERKSbIS3_St11char_traitsIS3_ESaIS3_EESC_+0x7b>
+  38:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  3c:	48 89 c7             	mov    %rax,%rdi
+  3f:	e8 00 00 00 00       	callq  44 <_ZSteqIcEN9__gnu_cxx11__enable_ifIXsrSt9__is_charIT_E7__valueEbE6__typeERKSbIS3_St11char_traitsIS3_ESaIS3_EESC_+0x44>
+  44:	49 89 c4             	mov    %rax,%r12
+  47:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+  4b:	48 89 c7             	mov    %rax,%rdi
+  4e:	e8 00 00 00 00       	callq  53 <_ZSteqIcEN9__gnu_cxx11__enable_ifIXsrSt9__is_charIT_E7__valueEbE6__typeERKSbIS3_St11char_traitsIS3_ESaIS3_EESC_+0x53>
+  53:	48 89 c3             	mov    %rax,%rbx
+  56:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  5a:	48 89 c7             	mov    %rax,%rdi
+  5d:	e8 00 00 00 00       	callq  62 <_ZSteqIcEN9__gnu_cxx11__enable_ifIXsrSt9__is_charIT_E7__valueEbE6__typeERKSbIS3_St11char_traitsIS3_ESaIS3_EESC_+0x62>
+  62:	4c 89 e2             	mov    %r12,%rdx
+  65:	48 89 de             	mov    %rbx,%rsi
+  68:	48 89 c7             	mov    %rax,%rdi
+  6b:	e8 00 00 00 00       	callq  70 <_ZSteqIcEN9__gnu_cxx11__enable_ifIXsrSt9__is_charIT_E7__valueEbE6__typeERKSbIS3_St11char_traitsIS3_ESaIS3_EESC_+0x70>
+  70:	85 c0                	test   %eax,%eax
+  72:	75 07                	jne    7b <_ZSteqIcEN9__gnu_cxx11__enable_ifIXsrSt9__is_charIT_E7__valueEbE6__typeERKSbIS3_St11char_traitsIS3_ESaIS3_EESC_+0x7b>
+  74:	b8 01 00 00 00       	mov    $0x1,%eax
+  79:	eb 05                	jmp    80 <_ZSteqIcEN9__gnu_cxx11__enable_ifIXsrSt9__is_charIT_E7__valueEbE6__typeERKSbIS3_St11char_traitsIS3_ESaIS3_EESC_+0x80>
+  7b:	b8 00 00 00 00       	mov    $0x0,%eax
+  80:	48 83 c4 10          	add    $0x10,%rsp
+  84:	5b                   	pop    %rbx
+  85:	41 5c                	pop    %r12
+  87:	5d                   	pop    %rbp
+  88:	c3                   	retq   
+
+Disassembly of section .text._ZN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEC2ERKS2_:
+
+0000000000000000 <_ZN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEC1ERKS2_>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	48 83 ec 10          	sub    $0x10,%rsp
+   8:	e8 00 00 00 00       	callq  d <_ZN9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEEC1ERKS2_+0xd>
+   d:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+  11:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+  15:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+  19:	48 8b 10             	mov    (%rax),%rdx
+  1c:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+  20:	48 89 10             	mov    %rdx,(%rax)
+  23:	c9                   	leaveq 
+  24:	c3                   	retq   
+
+Disassembly of section .text._ZNK9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEE4baseEv:
+
+0000000000000000 <_ZNK9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEE4baseEv>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	48 83 ec 08          	sub    $0x8,%rsp
+   8:	e8 00 00 00 00       	callq  d <_ZNK9__gnu_cxx17__normal_iteratorIPKSsSt6vectorISsSaISsEEE4baseEv+0xd>
+   d:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+  11:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+  15:	c9                   	leaveq 
+  16:	c3                   	retq   
