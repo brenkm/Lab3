@@ -43,7 +43,8 @@ NgramList::~NgramList()
    while (first != NULL)
    {
       nextNgram = first->next;
-      free(first);
+      //free(first);
+      delete first;              //wrong freeing method used because first is an object not a variable
       first = nextNgram;
    }
 }
@@ -122,6 +123,7 @@ void NgramList::insertNgram(std::string s)
       if (ptr->ngram == s) 
       {
          ptr->count++;
+         delete newNode;
          return;
       }
       ptr = ptr->next;
