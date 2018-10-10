@@ -1,5 +1,6 @@
 CC = g++ 
 CFLAGS = -g -pg -c -std=c++0x
+#CFLAGS = -g -pg -c -std=c++0x -O3
 OBJS = NgramList.o WordList.o main.o
 LFLAGS = -pg 
 
