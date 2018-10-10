@@ -3,84 +3,85 @@ Flat profile:
 Each sample counts as 0.01 seconds.
   %   cumulative   self              self     total           
  time   seconds   seconds    calls   s/call   s/call  name    
- 61.67     10.33    10.33        1    10.33    10.33  NgramList::sortByCount()
- 25.04     14.52     4.19 796261558     0.00     0.00  __gnu_cxx::__enable_if<std::__is_char<char>::__value, bool>::__type std::operator==<char>(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
- 11.89     16.52     1.99    53509     0.00     0.00  NgramList::insertNgram(std::string)
-  1.31     16.74     0.22 84052652     0.00     0.00  std::char_traits<char>::compare(char const*, char const*, unsigned long)
-  0.12     16.76     0.02        1     0.02     0.02  _GLOBAL__sub_I__ZN9NgramListC2EiRK8WordList
-  0.06     16.77     0.01    68578     0.00     0.00  std::vector<std::string, std::allocator<std::string> >::push_back(std::string const&)
-  0.00     16.77     0.00   381392     0.00     0.00  __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::base() const
-  0.00     16.77     0.00   330720     0.00     0.00  std::string* std::__addressof<std::string>(std::string&)
-  0.00     16.77     0.00   312784     0.00     0.00  __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::__normal_iterator(std::string const* const&)
-  0.00     16.77     0.00   262178     0.00     0.00  std::move_iterator<std::string*>::base() const
-  0.00     16.77     0.00   205752     0.00     0.00  std::string const& std::forward<std::string const&>(std::remove_reference<std::string const&>::type&)
-  0.00     16.77     0.00   199649     0.00     0.00  void std::_Destroy<std::string>(std::string*)
-  0.00     16.77     0.00   199649     0.00     0.00  operator new(unsigned long, void*)
-  0.00     16.77     0.00   190696     0.00     0.00  bool __gnu_cxx::operator!=<std::string const*, std::vector<std::string, std::allocator<std::string> > >(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&)
-  0.00     16.77     0.00   184580     0.00     0.00  std::remove_reference<std::string&>::type&& std::move<std::string&>(std::string&)
-  0.00     16.77     0.00   175626     0.00     0.00  __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::operator++(int)
-  0.00     16.77     0.00   137157     0.00     0.00  std::vector<std::string, std::allocator<std::string> >::end() const
-  0.00     16.77     0.00   131089     0.00     0.00  bool std::operator==<std::string*>(std::move_iterator<std::string*> const&, std::move_iterator<std::string*> const&)
-  0.00     16.77     0.00   131089     0.00     0.00  bool std::operator!=<std::string*>(std::move_iterator<std::string*> const&, std::move_iterator<std::string*> const&)
-  0.00     16.77     0.00   131071     0.00     0.00  std::move_iterator<std::string*>::operator*() const
-  0.00     16.77     0.00   131071     0.00     0.00  std::move_iterator<std::string*>::operator++()
-  0.00     16.77     0.00   131071     0.00     0.00  void std::_Construct<std::string, std::string>(std::string*, std::string&&)
-  0.00     16.77     0.00   131071     0.00     0.00  std::string&& std::forward<std::string>(std::remove_reference<std::string>::type&)
-  0.00     16.77     0.00   122116     0.00     0.00  __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::operator*() const
-  0.00     16.77     0.00   107048     0.00     0.00  bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
-  0.00     16.77     0.00    68578     0.00     0.00  WordList::addWord(std::string)
-  0.00     16.77     0.00    68578     0.00     0.00  NgramList::getNextNgram(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >)
-  0.00     16.77     0.00    68578     0.00     0.00  _ZN9__gnu_cxx13new_allocatorISsE9constructISsIRKSsEEEvPT_DpOT0_
-  0.00     16.77     0.00    68578     0.00     0.00  _ZNSt16allocator_traitsISaISsEE12_S_constructISsIRKSsEEENSt9enable_ifIXsrNS1_18__construct_helperIT_IDpT0_EEE5valueEvE4typeERS0_PS7_DpOS8_
-  0.00     16.77     0.00    68578     0.00     0.00  decltype (_S_construct({parm#1}, {parm#2}, (forward<std::string const&>)({parm#3}))) std::allocator_traits<std::allocator<std::string> >::construct<std::string, std::string const&>(std::allocator<std::string>&, std::string*, std::string const&)
-  0.00     16.77     0.00    53509     0.00     0.00  NgramList::Ngram::Ngram()
-  0.00     16.77     0.00    53509     0.00     0.00  std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
-  0.00     16.77     0.00    53509     0.00     0.00  std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
-  0.00     16.77     0.00       90     0.00     0.00  std::vector<std::string, std::allocator<std::string> >::size() const
-  0.00     16.77     0.00       54     0.00     0.00  __gnu_cxx::new_allocator<std::string>::max_size() const
-  0.00     16.77     0.00       37     0.00     0.00  std::_Vector_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator()
-  0.00     16.77     0.00       36     0.00     0.00  std::_Vector_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() const
-  0.00     16.77     0.00       36     0.00     0.00  std::vector<std::string, std::allocator<std::string> >::max_size() const
-  0.00     16.77     0.00       36     0.00     0.00  std::move_iterator<std::string*>::move_iterator(std::string*)
-  0.00     16.77     0.00       36     0.00     0.00  std::enable_if<std::allocator_traits<std::allocator<std::string> >::__maxsize_helper<std::allocator<std::string> const>::value, unsigned long>::type std::allocator_traits<std::allocator<std::string> >::_S_max_size<std::allocator<std::string> const>(std::allocator<std::string> const&)
-  0.00     16.77     0.00       36     0.00     0.00  std::allocator_traits<std::allocator<std::string> >::max_size(std::allocator<std::string> const&)
-  0.00     16.77     0.00       36     0.00     0.00  std::move_iterator<std::string*> std::__make_move_if_noexcept_iterator<std::string*, std::move_iterator<std::string*> >(std::string*)
-  0.00     16.77     0.00       19     0.00     0.00  void std::_Destroy_aux<false>::__destroy<std::string*>(std::string*, std::string*)
-  0.00     16.77     0.00       19     0.00     0.00  std::_Vector_base<std::string, std::allocator<std::string> >::_M_deallocate(std::string*, unsigned long)
-  0.00     16.77     0.00       19     0.00     0.00  void std::_Destroy<std::string*>(std::string*, std::string*)
-  0.00     16.77     0.00       19     0.00     0.00  void std::_Destroy<std::string*, std::string>(std::string*, std::string*, std::allocator<std::string>&)
-  0.00     16.77     0.00       18     0.00     0.00  __gnu_cxx::new_allocator<std::string>::deallocate(std::string*, unsigned long)
-  0.00     16.77     0.00       18     0.00     0.00  __gnu_cxx::new_allocator<std::string>::allocate(unsigned long, void const*)
-  0.00     16.77     0.00       18     0.00     0.00  std::vector<std::string, std::allocator<std::string> >::_M_check_len(unsigned long, char const*) const
-  0.00     16.77     0.00       18     0.00     0.00  std::_Vector_base<std::string, std::allocator<std::string> >::_M_allocate(unsigned long)
-  0.00     16.77     0.00       18     0.00     0.00  std::string* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*)
-  0.00     16.77     0.00       18     0.00     0.00  void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&)
-  0.00     16.77     0.00       18     0.00     0.00  std::string* std::uninitialized_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*)
-  0.00     16.77     0.00       18     0.00     0.00  std::string* std::__uninitialized_copy_a<std::move_iterator<std::string*>, std::string*, std::string>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*, std::allocator<std::string>&)
-  0.00     16.77     0.00       18     0.00     0.00  std::string* std::__uninitialized_move_if_noexcept_a<std::string*, std::string*, std::allocator<std::string> >(std::string*, std::string*, std::string*, std::allocator<std::string>&)
-  0.00     16.77     0.00       18     0.00     0.00  unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
-  0.00     16.77     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN8WordListC2Ev
-  0.00     16.77     0.00        1     0.00     0.00  _GLOBAL__sub_I_main
-  0.00     16.77     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
-  0.00     16.77     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
-  0.00     16.77     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
-  0.00     16.77     0.00        1     0.00     0.00  usage(int, char**, int&, std::string&)
-  0.00     16.77     0.00        1     0.00     0.00  WordList::WordList()
-  0.00     16.77     0.00        1     0.00     0.00  WordList::~WordList()
-  0.00     16.77     0.00        1     0.00     6.41  NgramList::NgramList(int, WordList const&)
-  0.00     16.77     0.00        1     0.00     0.00  NgramList::~NgramList()
-  0.00     16.77     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::string>::new_allocator()
-  0.00     16.77     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::string>::~new_allocator()
-  0.00     16.77     0.00        1     0.00     0.00  std::vector<std::string, std::allocator<std::string> >::begin() const
-  0.00     16.77     0.00        1     0.00     0.00  std::allocator<std::string>::allocator()
-  0.00     16.77     0.00        1     0.00     0.00  std::allocator<std::string>::~allocator()
-  0.00     16.77     0.00        1     0.00     0.00  std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_impl::_Vector_impl()
-  0.00     16.77     0.00        1     0.00     0.00  std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_impl::~_Vector_impl()
-  0.00     16.77     0.00        1     0.00     0.00  std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_base()
-  0.00     16.77     0.00        1     0.00     0.00  std::_Vector_base<std::string, std::allocator<std::string> >::~_Vector_base()
-  0.00     16.77     0.00        1     0.00     0.00  std::vector<std::string, std::allocator<std::string> >::vector()
-  0.00     16.77     0.00        1     0.00     0.00  std::vector<std::string, std::allocator<std::string> >::~vector()
-  0.00     16.77     0.00        1     0.00     0.00  operator<<(std::ostream&, NgramList const&)
+ 64.20      7.72     7.72        1     7.72     7.72  NgramList::sortByCount()
+ 21.90     10.35     2.63 796261558     0.00     0.00  __gnu_cxx::__enable_if<std::__is_char<char>::__value, bool>::__type std::operator==<char>(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+ 11.58     11.74     1.39    53509     0.00     0.00  NgramList::insertNgram(std::string)
+  1.29     11.90     0.16 84052652     0.00     0.00  std::char_traits<char>::compare(char const*, char const*, unsigned long)
+  0.92     12.01     0.11    53509     0.00     0.00  std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.08     12.02     0.01   131089     0.00     0.00  bool std::operator!=<std::string*>(std::move_iterator<std::string*> const&, std::move_iterator<std::string*> const&)
+  0.08     12.03     0.01   131071     0.00     0.00  std::move_iterator<std::string*>::operator++()
+  0.04     12.03     0.01        1     0.01     0.01  _GLOBAL__sub_I__ZN9NgramListC2EiRK8WordList
+  0.00     12.03     0.00   381392     0.00     0.00  __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::base() const
+  0.00     12.03     0.00   330720     0.00     0.00  std::string* std::__addressof<std::string>(std::string&)
+  0.00     12.03     0.00   312784     0.00     0.00  __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::__normal_iterator(std::string const* const&)
+  0.00     12.03     0.00   262178     0.00     0.00  std::move_iterator<std::string*>::base() const
+  0.00     12.03     0.00   205752     0.00     0.00  std::string const& std::forward<std::string const&>(std::remove_reference<std::string const&>::type&)
+  0.00     12.03     0.00   199649     0.00     0.00  void std::_Destroy<std::string>(std::string*)
+  0.00     12.03     0.00   199649     0.00     0.00  operator new(unsigned long, void*)
+  0.00     12.03     0.00   190696     0.00     0.00  bool __gnu_cxx::operator!=<std::string const*, std::vector<std::string, std::allocator<std::string> > >(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&)
+  0.00     12.03     0.00   184580     0.00     0.00  std::remove_reference<std::string&>::type&& std::move<std::string&>(std::string&)
+  0.00     12.03     0.00   175626     0.00     0.00  __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::operator++(int)
+  0.00     12.03     0.00   137157     0.00     0.00  std::vector<std::string, std::allocator<std::string> >::end() const
+  0.00     12.03     0.00   131089     0.00     0.00  bool std::operator==<std::string*>(std::move_iterator<std::string*> const&, std::move_iterator<std::string*> const&)
+  0.00     12.03     0.00   131071     0.00     0.00  std::move_iterator<std::string*>::operator*() const
+  0.00     12.03     0.00   131071     0.00     0.00  void std::_Construct<std::string, std::string>(std::string*, std::string&&)
+  0.00     12.03     0.00   131071     0.00     0.00  std::string&& std::forward<std::string>(std::remove_reference<std::string>::type&)
+  0.00     12.03     0.00   122116     0.00     0.00  __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::operator*() const
+  0.00     12.03     0.00   107048     0.00     0.00  bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
+  0.00     12.03     0.00    68578     0.00     0.00  WordList::addWord(std::string)
+  0.00     12.03     0.00    68578     0.00     0.00  NgramList::getNextNgram(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >)
+  0.00     12.03     0.00    68578     0.00     0.00  _ZN9__gnu_cxx13new_allocatorISsE9constructISsIRKSsEEEvPT_DpOT0_
+  0.00     12.03     0.00    68578     0.00     0.00  _ZNSt16allocator_traitsISaISsEE12_S_constructISsIRKSsEEENSt9enable_ifIXsrNS1_18__construct_helperIT_IDpT0_EEE5valueEvE4typeERS0_PS7_DpOS8_
+  0.00     12.03     0.00    68578     0.00     0.00  decltype (_S_construct({parm#1}, {parm#2}, (forward<std::string const&>)({parm#3}))) std::allocator_traits<std::allocator<std::string> >::construct<std::string, std::string const&>(std::allocator<std::string>&, std::string*, std::string const&)
+  0.00     12.03     0.00    68578     0.00     0.00  std::vector<std::string, std::allocator<std::string> >::push_back(std::string const&)
+  0.00     12.03     0.00    53509     0.00     0.00  NgramList::Ngram::Ngram()
+  0.00     12.03     0.00    53509     0.00     0.00  NgramList::Ngram::~Ngram()
+  0.00     12.03     0.00    53509     0.00     0.00  std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
+  0.00     12.03     0.00       90     0.00     0.00  std::vector<std::string, std::allocator<std::string> >::size() const
+  0.00     12.03     0.00       54     0.00     0.00  __gnu_cxx::new_allocator<std::string>::max_size() const
+  0.00     12.03     0.00       37     0.00     0.00  std::_Vector_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator()
+  0.00     12.03     0.00       36     0.00     0.00  std::_Vector_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() const
+  0.00     12.03     0.00       36     0.00     0.00  std::vector<std::string, std::allocator<std::string> >::max_size() const
+  0.00     12.03     0.00       36     0.00     0.00  std::move_iterator<std::string*>::move_iterator(std::string*)
+  0.00     12.03     0.00       36     0.00     0.00  std::enable_if<std::allocator_traits<std::allocator<std::string> >::__maxsize_helper<std::allocator<std::string> const>::value, unsigned long>::type std::allocator_traits<std::allocator<std::string> >::_S_max_size<std::allocator<std::string> const>(std::allocator<std::string> const&)
+  0.00     12.03     0.00       36     0.00     0.00  std::allocator_traits<std::allocator<std::string> >::max_size(std::allocator<std::string> const&)
+  0.00     12.03     0.00       36     0.00     0.00  std::move_iterator<std::string*> std::__make_move_if_noexcept_iterator<std::string*, std::move_iterator<std::string*> >(std::string*)
+  0.00     12.03     0.00       19     0.00     0.00  void std::_Destroy_aux<false>::__destroy<std::string*>(std::string*, std::string*)
+  0.00     12.03     0.00       19     0.00     0.00  std::_Vector_base<std::string, std::allocator<std::string> >::_M_deallocate(std::string*, unsigned long)
+  0.00     12.03     0.00       19     0.00     0.00  void std::_Destroy<std::string*>(std::string*, std::string*)
+  0.00     12.03     0.00       19     0.00     0.00  void std::_Destroy<std::string*, std::string>(std::string*, std::string*, std::allocator<std::string>&)
+  0.00     12.03     0.00       18     0.00     0.00  __gnu_cxx::new_allocator<std::string>::deallocate(std::string*, unsigned long)
+  0.00     12.03     0.00       18     0.00     0.00  __gnu_cxx::new_allocator<std::string>::allocate(unsigned long, void const*)
+  0.00     12.03     0.00       18     0.00     0.00  std::vector<std::string, std::allocator<std::string> >::_M_check_len(unsigned long, char const*) const
+  0.00     12.03     0.00       18     0.00     0.00  std::_Vector_base<std::string, std::allocator<std::string> >::_M_allocate(unsigned long)
+  0.00     12.03     0.00       18     0.00     0.00  std::string* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*)
+  0.00     12.03     0.00       18     0.00     0.00  void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&)
+  0.00     12.03     0.00       18     0.00     0.00  std::string* std::uninitialized_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*)
+  0.00     12.03     0.00       18     0.00     0.00  std::string* std::__uninitialized_copy_a<std::move_iterator<std::string*>, std::string*, std::string>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*, std::allocator<std::string>&)
+  0.00     12.03     0.00       18     0.00     0.00  std::string* std::__uninitialized_move_if_noexcept_a<std::string*, std::string*, std::allocator<std::string> >(std::string*, std::string*, std::string*, std::allocator<std::string>&)
+  0.00     12.03     0.00       18     0.00     0.00  unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00     12.03     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN8WordListC2Ev
+  0.00     12.03     0.00        1     0.00     0.00  _GLOBAL__sub_I_main
+  0.00     12.03     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00     12.03     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00     12.03     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00     12.03     0.00        1     0.00     0.00  usage(int, char**, int&, std::string&)
+  0.00     12.03     0.00        1     0.00     0.00  WordList::WordList()
+  0.00     12.03     0.00        1     0.00     0.00  WordList::~WordList()
+  0.00     12.03     0.00        1     0.00     4.29  NgramList::NgramList(int, WordList const&)
+  0.00     12.03     0.00        1     0.00     0.00  NgramList::~NgramList()
+  0.00     12.03     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::string>::new_allocator()
+  0.00     12.03     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::string>::~new_allocator()
+  0.00     12.03     0.00        1     0.00     0.00  std::vector<std::string, std::allocator<std::string> >::begin() const
+  0.00     12.03     0.00        1     0.00     0.00  std::allocator<std::string>::allocator()
+  0.00     12.03     0.00        1     0.00     0.00  std::allocator<std::string>::~allocator()
+  0.00     12.03     0.00        1     0.00     0.00  std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_impl::_Vector_impl()
+  0.00     12.03     0.00        1     0.00     0.00  std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_impl::~_Vector_impl()
+  0.00     12.03     0.00        1     0.00     0.00  std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_base()
+  0.00     12.03     0.00        1     0.00     0.00  std::_Vector_base<std::string, std::allocator<std::string> >::~_Vector_base()
+  0.00     12.03     0.00        1     0.00     0.00  std::vector<std::string, std::allocator<std::string> >::vector()
+  0.00     12.03     0.00        1     0.00     0.00  std::vector<std::string, std::allocator<std::string> >::~vector()
+  0.00     12.03     0.00        1     0.00     0.00  operator<<(std::ostream&, NgramList const&)
 
  %         the percentage of the total running time of the
 time       program used by this function.
@@ -118,358 +119,364 @@ notice and this notice are preserved.
 		     Call graph (explanation follows)
 
 
-granularity: each sample hit covers 2 byte(s) for 0.06% of 16.77 seconds
+granularity: each sample hit covers 2 byte(s) for 0.08% of 12.03 seconds
 
 index % time    self  children    called     name
                                                  <spontaneous>
-[1]     99.9    0.00   16.75                 main [1]
-               10.33    0.00       1/1           NgramList::sortByCount() [2]
-                0.00    6.41       1/1           NgramList::NgramList(int, WordList const&) [4]
-                0.00    0.01   68578/68578       WordList::addWord(std::string) [9]
-                0.00    0.00       1/1           WordList::WordList() [72]
-                0.00    0.00       1/1           usage(int, char**, int&, std::string&) [71]
-                0.00    0.00       1/1           operator<<(std::ostream&, NgramList const&) [86]
-                0.00    0.00       1/1           NgramList::~NgramList() [74]
-                0.00    0.00       1/1           WordList::~WordList() [73]
+[1]    100.0    0.00   12.03                 main [1]
+                7.72    0.00       1/1           NgramList::sortByCount() [2]
+                0.00    4.29       1/1           NgramList::NgramList(int, WordList const&) [3]
+                0.00    0.02   68578/68578       WordList::addWord(std::string) [9]
+                0.00    0.00       1/1           WordList::WordList() [73]
+                0.00    0.00       1/1           usage(int, char**, int&, std::string&) [72]
+                0.00    0.00       1/1           operator<<(std::ostream&, NgramList const&) [87]
+                0.00    0.00       1/1           NgramList::~NgramList() [75]
+                0.00    0.00       1/1           WordList::~WordList() [74]
 -----------------------------------------------
-               10.33    0.00       1/1           main [1]
-[2]     61.6   10.33    0.00       1         NgramList::sortByCount() [2]
+                7.72    0.00       1/1           main [1]
+[2]     64.1    7.72    0.00       1         NgramList::sortByCount() [2]
 -----------------------------------------------
-                1.99    4.41   53509/53509       NgramList::NgramList(int, WordList const&) [4]
-[3]     38.2    1.99    4.41   53509         NgramList::insertNgram(std::string) [3]
-                4.19    0.22 796261558/796261558     __gnu_cxx::__enable_if<std::__is_char<char>::__value, bool>::__type std::operator==<char>(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [5]
-                0.00    0.00   53509/53509       NgramList::Ngram::Ngram() [40]
+                0.00    4.29       1/1           main [1]
+[3]     35.6    0.00    4.29       1         NgramList::NgramList(int, WordList const&) [3]
+                1.39    2.79   53509/53509       NgramList::insertNgram(std::string) [4]
+                0.00    0.11   68578/68578       NgramList::getNextNgram(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >) [7]
+                0.00    0.00  137157/137157      std::vector<std::string, std::allocator<std::string> >::end() const [36]
+                0.00    0.00   68579/190696      bool __gnu_cxx::operator!=<std::string const*, std::vector<std::string, std::allocator<std::string> > >(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&) [33]
+                0.00    0.00   68578/175626      __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::operator++(int) [35]
+                0.00    0.00       1/1           std::vector<std::string, std::allocator<std::string> >::begin() const [78]
 -----------------------------------------------
-                0.00    6.41       1/1           main [1]
-[4]     38.2    0.00    6.41       1         NgramList::NgramList(int, WordList const&) [4]
-                1.99    4.41   53509/53509       NgramList::insertNgram(std::string) [3]
-                0.00    0.00  137157/137157      std::vector<std::string, std::allocator<std::string> >::end() const [27]
-                0.00    0.00   68579/190696      bool __gnu_cxx::operator!=<std::string const*, std::vector<std::string, std::allocator<std::string> > >(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&) [24]
-                0.00    0.00   68578/68578       NgramList::getNextNgram(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >) [36]
-                0.00    0.00   68578/175626      __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::operator++(int) [26]
-                0.00    0.00       1/1           std::vector<std::string, std::allocator<std::string> >::begin() const [77]
+                1.39    2.79   53509/53509       NgramList::NgramList(int, WordList const&) [3]
+[4]     34.7    1.39    2.79   53509         NgramList::insertNgram(std::string) [4]
+                2.63    0.16 796261558/796261558     __gnu_cxx::__enable_if<std::__is_char<char>::__value, bool>::__type std::operator==<char>(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [5]
+                0.00    0.00   53509/53509       NgramList::Ngram::Ngram() [46]
+                0.00    0.00   20269/53509       NgramList::Ngram::~Ngram() [47]
 -----------------------------------------------
-                4.19    0.22 796261558/796261558     NgramList::insertNgram(std::string) [3]
-[5]     26.3    4.19    0.22 796261558         __gnu_cxx::__enable_if<std::__is_char<char>::__value, bool>::__type std::operator==<char>(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [5]
-                0.22    0.00 84052652/84052652     std::char_traits<char>::compare(char const*, char const*, unsigned long) [6]
+                2.63    0.16 796261558/796261558     NgramList::insertNgram(std::string) [4]
+[5]     23.2    2.63    0.16 796261558         __gnu_cxx::__enable_if<std::__is_char<char>::__value, bool>::__type std::operator==<char>(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [5]
+                0.16    0.00 84052652/84052652     std::char_traits<char>::compare(char const*, char const*, unsigned long) [6]
 -----------------------------------------------
-                0.22    0.00 84052652/84052652     __gnu_cxx::__enable_if<std::__is_char<char>::__value, bool>::__type std::operator==<char>(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [5]
-[6]      1.3    0.22    0.00 84052652         std::char_traits<char>::compare(char const*, char const*, unsigned long) [6]
+                0.16    0.00 84052652/84052652     __gnu_cxx::__enable_if<std::__is_char<char>::__value, bool>::__type std::operator==<char>(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [5]
+[6]      1.3    0.16    0.00 84052652         std::char_traits<char>::compare(char const*, char const*, unsigned long) [6]
 -----------------------------------------------
-                0.02    0.00       1/1           __libc_csu_init [8]
-[7]      0.1    0.02    0.00       1         _GLOBAL__sub_I__ZN9NgramListC2EiRK8WordList [7]
-                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [68]
+                0.00    0.11   68578/68578       NgramList::NgramList(int, WordList const&) [3]
+[7]      0.9    0.00    0.11   68578         NgramList::getNextNgram(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >) [7]
+                0.11    0.00   53509/53509       std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [8]
+                0.00    0.00  122117/190696      bool __gnu_cxx::operator!=<std::string const*, std::vector<std::string, std::allocator<std::string> > >(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&) [33]
+                0.00    0.00  122116/122116      __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::operator*() const [41]
+                0.00    0.00  107048/107048      bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [42]
+                0.00    0.00  107048/175626      __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::operator++(int) [35]
+                0.00    0.00   53509/53509       std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [48]
 -----------------------------------------------
-                                                 <spontaneous>
-[8]      0.1    0.00    0.02                 __libc_csu_init [8]
-                0.02    0.00       1/1           _GLOBAL__sub_I__ZN9NgramListC2EiRK8WordList [7]
-                0.00    0.00       1/1           _GLOBAL__sub_I_main [67]
-                0.00    0.00       1/1           _GLOBAL__sub_I__ZN8WordListC2Ev [66]
+                0.11    0.00   53509/53509       NgramList::getNextNgram(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >) [7]
+[8]      0.9    0.11    0.00   53509         std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [8]
+                0.00    0.00   53509/184580      std::remove_reference<std::string&>::type&& std::move<std::string&>(std::string&) [34]
 -----------------------------------------------
-                0.00    0.01   68578/68578       main [1]
-[9]      0.1    0.00    0.01   68578         WordList::addWord(std::string) [9]
-                0.01    0.00   68578/68578       std::vector<std::string, std::allocator<std::string> >::push_back(std::string const&) [10]
+                0.00    0.02   68578/68578       main [1]
+[9]      0.2    0.00    0.02   68578         WordList::addWord(std::string) [9]
+                0.00    0.02   68578/68578       std::vector<std::string, std::allocator<std::string> >::push_back(std::string const&) [10]
 -----------------------------------------------
-                0.01    0.00   68578/68578       WordList::addWord(std::string) [9]
-[10]     0.1    0.01    0.00   68578         std::vector<std::string, std::allocator<std::string> >::push_back(std::string const&) [10]
-                0.00    0.00   68560/68578       decltype (_S_construct({parm#1}, {parm#2}, (forward<std::string const&>)({parm#3}))) std::allocator_traits<std::allocator<std::string> >::construct<std::string, std::string const&>(std::allocator<std::string>&, std::string*, std::string const&) [39]
-                0.00    0.00      18/18          void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) [61]
+                0.00    0.02   68578/68578       WordList::addWord(std::string) [9]
+[10]     0.2    0.00    0.02   68578         std::vector<std::string, std::allocator<std::string> >::push_back(std::string const&) [10]
+                0.00    0.02      18/18          void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) [12]
+                0.00    0.00   68560/68578       decltype (_S_construct({parm#1}, {parm#2}, (forward<std::string const&>)({parm#3}))) std::allocator_traits<std::allocator<std::string> >::construct<std::string, std::string const&>(std::allocator<std::string>&, std::string*, std::string const&) [45]
 -----------------------------------------------
-                0.00    0.00  381392/381392      bool __gnu_cxx::operator!=<std::string const*, std::vector<std::string, std::allocator<std::string> > >(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&) [24]
-[17]     0.0    0.00    0.00  381392         __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::base() const [17]
+                0.00    0.02      18/18          std::string* std::uninitialized_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*) [13]
+[11]     0.2    0.00    0.02      18         std::string* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*) [11]
+                0.01    0.00  131089/131089      bool std::operator!=<std::string*>(std::move_iterator<std::string*> const&, std::move_iterator<std::string*> const&) [16]
+                0.01    0.00  131071/131071      std::move_iterator<std::string*>::operator++() [17]
+                0.00    0.00  131071/131071      std::move_iterator<std::string*>::operator*() const [38]
+                0.00    0.00  131071/330720      std::string* std::__addressof<std::string>(std::string&) [27]
+                0.00    0.00  131071/131071      void std::_Construct<std::string, std::string>(std::string*, std::string&&) [39]
 -----------------------------------------------
-                0.00    0.00  131071/330720      std::string* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*) [60]
-                0.00    0.00  199649/330720      void std::_Destroy_aux<false>::__destroy<std::string*>(std::string*, std::string*) [52]
-[18]     0.0    0.00    0.00  330720         std::string* std::__addressof<std::string>(std::string&) [18]
+                0.00    0.02      18/18          std::vector<std::string, std::allocator<std::string> >::push_back(std::string const&) [10]
+[12]     0.2    0.00    0.02      18         void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) [12]
+                0.00    0.02      18/18          std::string* std::__uninitialized_move_if_noexcept_a<std::string*, std::string*, std::allocator<std::string> >(std::string*, std::string*, std::string*, std::allocator<std::string>&) [15]
+                0.00    0.00      36/37          std::_Vector_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() [51]
+                0.00    0.00      18/18          std::vector<std::string, std::allocator<std::string> >::_M_check_len(unsigned long, char const*) const [64]
+                0.00    0.00      18/18          std::_Vector_base<std::string, std::allocator<std::string> >::_M_allocate(unsigned long) [65]
+                0.00    0.00      18/205752      std::string const& std::forward<std::string const&>(std::remove_reference<std::string const&>::type&) [30]
+                0.00    0.00      18/90          std::vector<std::string, std::allocator<std::string> >::size() const [49]
+                0.00    0.00      18/68578       decltype (_S_construct({parm#1}, {parm#2}, (forward<std::string const&>)({parm#3}))) std::allocator_traits<std::allocator<std::string> >::construct<std::string, std::string const&>(std::allocator<std::string>&, std::string*, std::string const&) [45]
+                0.00    0.00      18/19          void std::_Destroy<std::string*, std::string>(std::string*, std::string*, std::allocator<std::string>&) [61]
+                0.00    0.00      18/19          std::_Vector_base<std::string, std::allocator<std::string> >::_M_deallocate(std::string*, unsigned long) [59]
 -----------------------------------------------
-                0.00    0.00       1/312784      std::vector<std::string, std::allocator<std::string> >::begin() const [77]
-                0.00    0.00  137157/312784      std::vector<std::string, std::allocator<std::string> >::end() const [27]
-                0.00    0.00  175626/312784      __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::operator++(int) [26]
-[19]     0.0    0.00    0.00  312784         __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::__normal_iterator(std::string const* const&) [19]
+                0.00    0.02      18/18          std::string* std::__uninitialized_copy_a<std::move_iterator<std::string*>, std::string*, std::string>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*, std::allocator<std::string>&) [14]
+[13]     0.2    0.00    0.02      18         std::string* std::uninitialized_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*) [13]
+                0.00    0.02      18/18          std::string* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*) [11]
 -----------------------------------------------
-                0.00    0.00  262178/262178      bool std::operator==<std::string*>(std::move_iterator<std::string*> const&, std::move_iterator<std::string*> const&) [28]
-[20]     0.0    0.00    0.00  262178         std::move_iterator<std::string*>::base() const [20]
+                0.00    0.02      18/18          std::string* std::__uninitialized_move_if_noexcept_a<std::string*, std::string*, std::allocator<std::string> >(std::string*, std::string*, std::string*, std::allocator<std::string>&) [15]
+[14]     0.2    0.00    0.02      18         std::string* std::__uninitialized_copy_a<std::move_iterator<std::string*>, std::string*, std::string>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*, std::allocator<std::string>&) [14]
+                0.00    0.02      18/18          std::string* std::uninitialized_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*) [13]
 -----------------------------------------------
-                0.00    0.00      18/205752      void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) [61]
-                0.00    0.00   68578/205752      decltype (_S_construct({parm#1}, {parm#2}, (forward<std::string const&>)({parm#3}))) std::allocator_traits<std::allocator<std::string> >::construct<std::string, std::string const&>(std::allocator<std::string>&, std::string*, std::string const&) [39]
-                0.00    0.00   68578/205752      _ZNSt16allocator_traitsISaISsEE12_S_constructISsIRKSsEEENSt9enable_ifIXsrNS1_18__construct_helperIT_IDpT0_EEE5valueEvE4typeERS0_PS7_DpOS8_ [38]
-                0.00    0.00   68578/205752      _ZN9__gnu_cxx13new_allocatorISsE9constructISsIRKSsEEEvPT_DpOT0_ [37]
-[21]     0.0    0.00    0.00  205752         std::string const& std::forward<std::string const&>(std::remove_reference<std::string const&>::type&) [21]
+                0.00    0.02      18/18          void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) [12]
+[15]     0.2    0.00    0.02      18         std::string* std::__uninitialized_move_if_noexcept_a<std::string*, std::string*, std::allocator<std::string> >(std::string*, std::string*, std::string*, std::allocator<std::string>&) [15]
+                0.00    0.02      18/18          std::string* std::__uninitialized_copy_a<std::move_iterator<std::string*>, std::string*, std::string>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*, std::allocator<std::string>&) [14]
+                0.00    0.00      36/36          std::move_iterator<std::string*> std::__make_move_if_noexcept_iterator<std::string*, std::move_iterator<std::string*> >(std::string*) [57]
 -----------------------------------------------
-                0.00    0.00  199649/199649      void std::_Destroy_aux<false>::__destroy<std::string*>(std::string*, std::string*) [52]
-[22]     0.0    0.00    0.00  199649         void std::_Destroy<std::string>(std::string*) [22]
+                0.01    0.00  131089/131089      std::string* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*) [11]
+[16]     0.1    0.01    0.00  131089         bool std::operator!=<std::string*>(std::move_iterator<std::string*> const&, std::move_iterator<std::string*> const&) [16]
+                0.00    0.00  131089/131089      bool std::operator==<std::string*>(std::move_iterator<std::string*> const&, std::move_iterator<std::string*> const&) [37]
 -----------------------------------------------
-                0.00    0.00   68578/199649      _ZN9__gnu_cxx13new_allocatorISsE9constructISsIRKSsEEEvPT_DpOT0_ [37]
-                0.00    0.00  131071/199649      void std::_Construct<std::string, std::string>(std::string*, std::string&&) [32]
-[23]     0.0    0.00    0.00  199649         operator new(unsigned long, void*) [23]
+                0.01    0.00  131071/131071      std::string* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*) [11]
+[17]     0.1    0.01    0.00  131071         std::move_iterator<std::string*>::operator++() [17]
 -----------------------------------------------
-                0.00    0.00   68579/190696      NgramList::NgramList(int, WordList const&) [4]
-                0.00    0.00  122117/190696      NgramList::getNextNgram(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >) [36]
-[24]     0.0    0.00    0.00  190696         bool __gnu_cxx::operator!=<std::string const*, std::vector<std::string, std::allocator<std::string> > >(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&) [24]
-                0.00    0.00  381392/381392      __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::base() const [17]
------------------------------------------------
-                0.00    0.00   53509/184580      std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [41]
-                0.00    0.00  131071/184580      std::move_iterator<std::string*>::operator*() const [30]
-[25]     0.0    0.00    0.00  184580         std::remove_reference<std::string&>::type&& std::move<std::string&>(std::string&) [25]
------------------------------------------------
-                0.00    0.00   68578/175626      NgramList::NgramList(int, WordList const&) [4]
-                0.00    0.00  107048/175626      NgramList::getNextNgram(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >) [36]
-[26]     0.0    0.00    0.00  175626         __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::operator++(int) [26]
-                0.00    0.00  175626/312784      __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::__normal_iterator(std::string const* const&) [19]
------------------------------------------------
-                0.00    0.00  137157/137157      NgramList::NgramList(int, WordList const&) [4]
-[27]     0.0    0.00    0.00  137157         std::vector<std::string, std::allocator<std::string> >::end() const [27]
-                0.00    0.00  137157/312784      __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::__normal_iterator(std::string const* const&) [19]
------------------------------------------------
-                0.00    0.00  131089/131089      bool std::operator!=<std::string*>(std::move_iterator<std::string*> const&, std::move_iterator<std::string*> const&) [29]
-[28]     0.0    0.00    0.00  131089         bool std::operator==<std::string*>(std::move_iterator<std::string*> const&, std::move_iterator<std::string*> const&) [28]
-                0.00    0.00  262178/262178      std::move_iterator<std::string*>::base() const [20]
------------------------------------------------
-                0.00    0.00  131089/131089      std::string* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*) [60]
-[29]     0.0    0.00    0.00  131089         bool std::operator!=<std::string*>(std::move_iterator<std::string*> const&, std::move_iterator<std::string*> const&) [29]
-                0.00    0.00  131089/131089      bool std::operator==<std::string*>(std::move_iterator<std::string*> const&, std::move_iterator<std::string*> const&) [28]
------------------------------------------------
-                0.00    0.00  131071/131071      std::string* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*) [60]
-[30]     0.0    0.00    0.00  131071         std::move_iterator<std::string*>::operator*() const [30]
-                0.00    0.00  131071/184580      std::remove_reference<std::string&>::type&& std::move<std::string&>(std::string&) [25]
------------------------------------------------
-                0.00    0.00  131071/131071      std::string* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*) [60]
-[31]     0.0    0.00    0.00  131071         std::move_iterator<std::string*>::operator++() [31]
------------------------------------------------
-                0.00    0.00  131071/131071      std::string* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*) [60]
-[32]     0.0    0.00    0.00  131071         void std::_Construct<std::string, std::string>(std::string*, std::string&&) [32]
-                0.00    0.00  131071/131071      std::string&& std::forward<std::string>(std::remove_reference<std::string>::type&) [33]
-                0.00    0.00  131071/199649      operator new(unsigned long, void*) [23]
------------------------------------------------
-                0.00    0.00  131071/131071      void std::_Construct<std::string, std::string>(std::string*, std::string&&) [32]
-[33]     0.0    0.00    0.00  131071         std::string&& std::forward<std::string>(std::remove_reference<std::string>::type&) [33]
------------------------------------------------
-                0.00    0.00  122116/122116      NgramList::getNextNgram(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >) [36]
-[34]     0.0    0.00    0.00  122116         __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::operator*() const [34]
------------------------------------------------
-                0.00    0.00  107048/107048      NgramList::getNextNgram(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >) [36]
-[35]     0.0    0.00    0.00  107048         bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [35]
------------------------------------------------
-                0.00    0.00   68578/68578       NgramList::NgramList(int, WordList const&) [4]
-[36]     0.0    0.00    0.00   68578         NgramList::getNextNgram(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >) [36]
-                0.00    0.00  122117/190696      bool __gnu_cxx::operator!=<std::string const*, std::vector<std::string, std::allocator<std::string> > >(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&) [24]
-                0.00    0.00  122116/122116      __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::operator*() const [34]
-                0.00    0.00  107048/107048      bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [35]
-                0.00    0.00  107048/175626      __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::operator++(int) [26]
-                0.00    0.00   53509/53509       std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [42]
-                0.00    0.00   53509/53509       std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [41]
------------------------------------------------
-                0.00    0.00   68578/68578       _ZNSt16allocator_traitsISaISsEE12_S_constructISsIRKSsEEENSt9enable_ifIXsrNS1_18__construct_helperIT_IDpT0_EEE5valueEvE4typeERS0_PS7_DpOS8_ [38]
-[37]     0.0    0.00    0.00   68578         _ZN9__gnu_cxx13new_allocatorISsE9constructISsIRKSsEEEvPT_DpOT0_ [37]
-                0.00    0.00   68578/205752      std::string const& std::forward<std::string const&>(std::remove_reference<std::string const&>::type&) [21]
-                0.00    0.00   68578/199649      operator new(unsigned long, void*) [23]
------------------------------------------------
-                0.00    0.00   68578/68578       decltype (_S_construct({parm#1}, {parm#2}, (forward<std::string const&>)({parm#3}))) std::allocator_traits<std::allocator<std::string> >::construct<std::string, std::string const&>(std::allocator<std::string>&, std::string*, std::string const&) [39]
-[38]     0.0    0.00    0.00   68578         _ZNSt16allocator_traitsISaISsEE12_S_constructISsIRKSsEEENSt9enable_ifIXsrNS1_18__construct_helperIT_IDpT0_EEE5valueEvE4typeERS0_PS7_DpOS8_ [38]
-                0.00    0.00   68578/205752      std::string const& std::forward<std::string const&>(std::remove_reference<std::string const&>::type&) [21]
-                0.00    0.00   68578/68578       _ZN9__gnu_cxx13new_allocatorISsE9constructISsIRKSsEEEvPT_DpOT0_ [37]
------------------------------------------------
-                0.00    0.00      18/68578       void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) [61]
-                0.00    0.00   68560/68578       std::vector<std::string, std::allocator<std::string> >::push_back(std::string const&) [10]
-[39]     0.0    0.00    0.00   68578         decltype (_S_construct({parm#1}, {parm#2}, (forward<std::string const&>)({parm#3}))) std::allocator_traits<std::allocator<std::string> >::construct<std::string, std::string const&>(std::allocator<std::string>&, std::string*, std::string const&) [39]
-                0.00    0.00   68578/205752      std::string const& std::forward<std::string const&>(std::remove_reference<std::string const&>::type&) [21]
-                0.00    0.00   68578/68578       _ZNSt16allocator_traitsISaISsEE12_S_constructISsIRKSsEEENSt9enable_ifIXsrNS1_18__construct_helperIT_IDpT0_EEE5valueEvE4typeERS0_PS7_DpOS8_ [38]
------------------------------------------------
-                0.00    0.00   53509/53509       NgramList::insertNgram(std::string) [3]
-[40]     0.0    0.00    0.00   53509         NgramList::Ngram::Ngram() [40]
------------------------------------------------
-                0.00    0.00   53509/53509       NgramList::getNextNgram(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >) [36]
-[41]     0.0    0.00    0.00   53509         std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [41]
-                0.00    0.00   53509/184580      std::remove_reference<std::string&>::type&& std::move<std::string&>(std::string&) [25]
------------------------------------------------
-                0.00    0.00   53509/53509       NgramList::getNextNgram(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >) [36]
-[42]     0.0    0.00    0.00   53509         std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [42]
------------------------------------------------
-                0.00    0.00      18/90          void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) [61]
-                0.00    0.00      72/90          std::vector<std::string, std::allocator<std::string> >::_M_check_len(unsigned long, char const*) const [58]
-[43]     0.0    0.00    0.00      90         std::vector<std::string, std::allocator<std::string> >::size() const [43]
------------------------------------------------
-                0.00    0.00      18/54          __gnu_cxx::new_allocator<std::string>::allocate(unsigned long, void const*) [57]
-                0.00    0.00      36/54          std::enable_if<std::allocator_traits<std::allocator<std::string> >::__maxsize_helper<std::allocator<std::string> const>::value, unsigned long>::type std::allocator_traits<std::allocator<std::string> >::_S_max_size<std::allocator<std::string> const>(std::allocator<std::string> const&) [49]
-[44]     0.0    0.00    0.00      54         __gnu_cxx::new_allocator<std::string>::max_size() const [44]
------------------------------------------------
-                0.00    0.00       1/37          std::vector<std::string, std::allocator<std::string> >::~vector() [85]
-                0.00    0.00      36/37          void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) [61]
-[45]     0.0    0.00    0.00      37         std::_Vector_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() [45]
------------------------------------------------
-                0.00    0.00      36/36          std::vector<std::string, std::allocator<std::string> >::max_size() const [47]
-[46]     0.0    0.00    0.00      36         std::_Vector_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() const [46]
------------------------------------------------
-                0.00    0.00      36/36          std::vector<std::string, std::allocator<std::string> >::_M_check_len(unsigned long, char const*) const [58]
-[47]     0.0    0.00    0.00      36         std::vector<std::string, std::allocator<std::string> >::max_size() const [47]
-                0.00    0.00      36/36          std::allocator_traits<std::allocator<std::string> >::max_size(std::allocator<std::string> const&) [50]
-                0.00    0.00      36/36          std::_Vector_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() const [46]
------------------------------------------------
-                0.00    0.00      36/36          std::move_iterator<std::string*> std::__make_move_if_noexcept_iterator<std::string*, std::move_iterator<std::string*> >(std::string*) [51]
-[48]     0.0    0.00    0.00      36         std::move_iterator<std::string*>::move_iterator(std::string*) [48]
------------------------------------------------
-                0.00    0.00      36/36          std::allocator_traits<std::allocator<std::string> >::max_size(std::allocator<std::string> const&) [50]
-[49]     0.0    0.00    0.00      36         std::enable_if<std::allocator_traits<std::allocator<std::string> >::__maxsize_helper<std::allocator<std::string> const>::value, unsigned long>::type std::allocator_traits<std::allocator<std::string> >::_S_max_size<std::allocator<std::string> const>(std::allocator<std::string> const&) [49]
-                0.00    0.00      36/54          __gnu_cxx::new_allocator<std::string>::max_size() const [44]
------------------------------------------------
-                0.00    0.00      36/36          std::vector<std::string, std::allocator<std::string> >::max_size() const [47]
-[50]     0.0    0.00    0.00      36         std::allocator_traits<std::allocator<std::string> >::max_size(std::allocator<std::string> const&) [50]
-                0.00    0.00      36/36          std::enable_if<std::allocator_traits<std::allocator<std::string> >::__maxsize_helper<std::allocator<std::string> const>::value, unsigned long>::type std::allocator_traits<std::allocator<std::string> >::_S_max_size<std::allocator<std::string> const>(std::allocator<std::string> const&) [49]
------------------------------------------------
-                0.00    0.00      36/36          std::string* std::__uninitialized_move_if_noexcept_a<std::string*, std::string*, std::allocator<std::string> >(std::string*, std::string*, std::string*, std::allocator<std::string>&) [64]
-[51]     0.0    0.00    0.00      36         std::move_iterator<std::string*> std::__make_move_if_noexcept_iterator<std::string*, std::move_iterator<std::string*> >(std::string*) [51]
-                0.00    0.00      36/36          std::move_iterator<std::string*>::move_iterator(std::string*) [48]
------------------------------------------------
-                0.00    0.00      19/19          void std::_Destroy<std::string*>(std::string*, std::string*) [54]
-[52]     0.0    0.00    0.00      19         void std::_Destroy_aux<false>::__destroy<std::string*>(std::string*, std::string*) [52]
-                0.00    0.00  199649/199649      void std::_Destroy<std::string>(std::string*) [22]
-                0.00    0.00  199649/330720      std::string* std::__addressof<std::string>(std::string&) [18]
------------------------------------------------
-                0.00    0.00       1/19          std::_Vector_base<std::string, std::allocator<std::string> >::~_Vector_base() [83]
-                0.00    0.00      18/19          void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) [61]
-[53]     0.0    0.00    0.00      19         std::_Vector_base<std::string, std::allocator<std::string> >::_M_deallocate(std::string*, unsigned long) [53]
-                0.00    0.00      18/18          __gnu_cxx::new_allocator<std::string>::deallocate(std::string*, unsigned long) [56]
------------------------------------------------
-                0.00    0.00      19/19          void std::_Destroy<std::string*, std::string>(std::string*, std::string*, std::allocator<std::string>&) [55]
-[54]     0.0    0.00    0.00      19         void std::_Destroy<std::string*>(std::string*, std::string*) [54]
-                0.00    0.00      19/19          void std::_Destroy_aux<false>::__destroy<std::string*>(std::string*, std::string*) [52]
------------------------------------------------
-                0.00    0.00       1/19          std::vector<std::string, std::allocator<std::string> >::~vector() [85]
-                0.00    0.00      18/19          void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) [61]
-[55]     0.0    0.00    0.00      19         void std::_Destroy<std::string*, std::string>(std::string*, std::string*, std::allocator<std::string>&) [55]
-                0.00    0.00      19/19          void std::_Destroy<std::string*>(std::string*, std::string*) [54]
------------------------------------------------
-                0.00    0.00      18/18          std::_Vector_base<std::string, std::allocator<std::string> >::_M_deallocate(std::string*, unsigned long) [53]
-[56]     0.0    0.00    0.00      18         __gnu_cxx::new_allocator<std::string>::deallocate(std::string*, unsigned long) [56]
------------------------------------------------
-                0.00    0.00      18/18          std::_Vector_base<std::string, std::allocator<std::string> >::_M_allocate(unsigned long) [59]
-[57]     0.0    0.00    0.00      18         __gnu_cxx::new_allocator<std::string>::allocate(unsigned long, void const*) [57]
-                0.00    0.00      18/54          __gnu_cxx::new_allocator<std::string>::max_size() const [44]
------------------------------------------------
-                0.00    0.00      18/18          void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) [61]
-[58]     0.0    0.00    0.00      18         std::vector<std::string, std::allocator<std::string> >::_M_check_len(unsigned long, char const*) const [58]
-                0.00    0.00      72/90          std::vector<std::string, std::allocator<std::string> >::size() const [43]
-                0.00    0.00      36/36          std::vector<std::string, std::allocator<std::string> >::max_size() const [47]
-                0.00    0.00      18/18          unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [65]
------------------------------------------------
-                0.00    0.00      18/18          void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) [61]
-[59]     0.0    0.00    0.00      18         std::_Vector_base<std::string, std::allocator<std::string> >::_M_allocate(unsigned long) [59]
-                0.00    0.00      18/18          __gnu_cxx::new_allocator<std::string>::allocate(unsigned long, void const*) [57]
------------------------------------------------
-                0.00    0.00      18/18          std::string* std::uninitialized_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*) [62]
-[60]     0.0    0.00    0.00      18         std::string* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*) [60]
-                0.00    0.00  131089/131089      bool std::operator!=<std::string*>(std::move_iterator<std::string*> const&, std::move_iterator<std::string*> const&) [29]
-                0.00    0.00  131071/131071      std::move_iterator<std::string*>::operator*() const [30]
-                0.00    0.00  131071/330720      std::string* std::__addressof<std::string>(std::string&) [18]
-                0.00    0.00  131071/131071      void std::_Construct<std::string, std::string>(std::string*, std::string&&) [32]
-                0.00    0.00  131071/131071      std::move_iterator<std::string*>::operator++() [31]
------------------------------------------------
-                0.00    0.00      18/18          std::vector<std::string, std::allocator<std::string> >::push_back(std::string const&) [10]
-[61]     0.0    0.00    0.00      18         void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) [61]
-                0.00    0.00      36/37          std::_Vector_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() [45]
-                0.00    0.00      18/18          std::vector<std::string, std::allocator<std::string> >::_M_check_len(unsigned long, char const*) const [58]
-                0.00    0.00      18/18          std::_Vector_base<std::string, std::allocator<std::string> >::_M_allocate(unsigned long) [59]
-                0.00    0.00      18/205752      std::string const& std::forward<std::string const&>(std::remove_reference<std::string const&>::type&) [21]
-                0.00    0.00      18/90          std::vector<std::string, std::allocator<std::string> >::size() const [43]
-                0.00    0.00      18/68578       decltype (_S_construct({parm#1}, {parm#2}, (forward<std::string const&>)({parm#3}))) std::allocator_traits<std::allocator<std::string> >::construct<std::string, std::string const&>(std::allocator<std::string>&, std::string*, std::string const&) [39]
-                0.00    0.00      18/18          std::string* std::__uninitialized_move_if_noexcept_a<std::string*, std::string*, std::allocator<std::string> >(std::string*, std::string*, std::string*, std::allocator<std::string>&) [64]
-                0.00    0.00      18/19          void std::_Destroy<std::string*, std::string>(std::string*, std::string*, std::allocator<std::string>&) [55]
-                0.00    0.00      18/19          std::_Vector_base<std::string, std::allocator<std::string> >::_M_deallocate(std::string*, unsigned long) [53]
------------------------------------------------
-                0.00    0.00      18/18          std::string* std::__uninitialized_copy_a<std::move_iterator<std::string*>, std::string*, std::string>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*, std::allocator<std::string>&) [63]
-[62]     0.0    0.00    0.00      18         std::string* std::uninitialized_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*) [62]
-                0.00    0.00      18/18          std::string* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*) [60]
------------------------------------------------
-                0.00    0.00      18/18          std::string* std::__uninitialized_move_if_noexcept_a<std::string*, std::string*, std::allocator<std::string> >(std::string*, std::string*, std::string*, std::allocator<std::string>&) [64]
-[63]     0.0    0.00    0.00      18         std::string* std::__uninitialized_copy_a<std::move_iterator<std::string*>, std::string*, std::string>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*, std::allocator<std::string>&) [63]
-                0.00    0.00      18/18          std::string* std::uninitialized_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*) [62]
------------------------------------------------
-                0.00    0.00      18/18          void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) [61]
-[64]     0.0    0.00    0.00      18         std::string* std::__uninitialized_move_if_noexcept_a<std::string*, std::string*, std::allocator<std::string> >(std::string*, std::string*, std::string*, std::allocator<std::string>&) [64]
-                0.00    0.00      36/36          std::move_iterator<std::string*> std::__make_move_if_noexcept_iterator<std::string*, std::move_iterator<std::string*> >(std::string*) [51]
-                0.00    0.00      18/18          std::string* std::__uninitialized_copy_a<std::move_iterator<std::string*>, std::string*, std::string>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*, std::allocator<std::string>&) [63]
------------------------------------------------
-                0.00    0.00      18/18          std::vector<std::string, std::allocator<std::string> >::_M_check_len(unsigned long, char const*) const [58]
-[65]     0.0    0.00    0.00      18         unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [65]
------------------------------------------------
-                0.00    0.00       1/1           __libc_csu_init [8]
-[66]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN8WordListC2Ev [66]
+                0.01    0.00       1/1           __libc_csu_init [19]
+[18]     0.0    0.01    0.00       1         _GLOBAL__sub_I__ZN9NgramListC2EiRK8WordList [18]
                 0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [69]
 -----------------------------------------------
-                0.00    0.00       1/1           __libc_csu_init [8]
-[67]     0.0    0.00    0.00       1         _GLOBAL__sub_I_main [67]
+                                                 <spontaneous>
+[19]     0.0    0.00    0.01                 __libc_csu_init [19]
+                0.01    0.00       1/1           _GLOBAL__sub_I__ZN9NgramListC2EiRK8WordList [18]
+                0.00    0.00       1/1           _GLOBAL__sub_I_main [68]
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN8WordListC2Ev [67]
+-----------------------------------------------
+                0.00    0.00  381392/381392      bool __gnu_cxx::operator!=<std::string const*, std::vector<std::string, std::allocator<std::string> > >(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&) [33]
+[26]     0.0    0.00    0.00  381392         __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::base() const [26]
+-----------------------------------------------
+                0.00    0.00  131071/330720      std::string* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*) [11]
+                0.00    0.00  199649/330720      void std::_Destroy_aux<false>::__destroy<std::string*>(std::string*, std::string*) [58]
+[27]     0.0    0.00    0.00  330720         std::string* std::__addressof<std::string>(std::string&) [27]
+-----------------------------------------------
+                0.00    0.00       1/312784      std::vector<std::string, std::allocator<std::string> >::begin() const [78]
+                0.00    0.00  137157/312784      std::vector<std::string, std::allocator<std::string> >::end() const [36]
+                0.00    0.00  175626/312784      __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::operator++(int) [35]
+[28]     0.0    0.00    0.00  312784         __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::__normal_iterator(std::string const* const&) [28]
+-----------------------------------------------
+                0.00    0.00  262178/262178      bool std::operator==<std::string*>(std::move_iterator<std::string*> const&, std::move_iterator<std::string*> const&) [37]
+[29]     0.0    0.00    0.00  262178         std::move_iterator<std::string*>::base() const [29]
+-----------------------------------------------
+                0.00    0.00      18/205752      void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) [12]
+                0.00    0.00   68578/205752      decltype (_S_construct({parm#1}, {parm#2}, (forward<std::string const&>)({parm#3}))) std::allocator_traits<std::allocator<std::string> >::construct<std::string, std::string const&>(std::allocator<std::string>&, std::string*, std::string const&) [45]
+                0.00    0.00   68578/205752      _ZNSt16allocator_traitsISaISsEE12_S_constructISsIRKSsEEENSt9enable_ifIXsrNS1_18__construct_helperIT_IDpT0_EEE5valueEvE4typeERS0_PS7_DpOS8_ [44]
+                0.00    0.00   68578/205752      _ZN9__gnu_cxx13new_allocatorISsE9constructISsIRKSsEEEvPT_DpOT0_ [43]
+[30]     0.0    0.00    0.00  205752         std::string const& std::forward<std::string const&>(std::remove_reference<std::string const&>::type&) [30]
+-----------------------------------------------
+                0.00    0.00  199649/199649      void std::_Destroy_aux<false>::__destroy<std::string*>(std::string*, std::string*) [58]
+[31]     0.0    0.00    0.00  199649         void std::_Destroy<std::string>(std::string*) [31]
+-----------------------------------------------
+                0.00    0.00   68578/199649      _ZN9__gnu_cxx13new_allocatorISsE9constructISsIRKSsEEEvPT_DpOT0_ [43]
+                0.00    0.00  131071/199649      void std::_Construct<std::string, std::string>(std::string*, std::string&&) [39]
+[32]     0.0    0.00    0.00  199649         operator new(unsigned long, void*) [32]
+-----------------------------------------------
+                0.00    0.00   68579/190696      NgramList::NgramList(int, WordList const&) [3]
+                0.00    0.00  122117/190696      NgramList::getNextNgram(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >) [7]
+[33]     0.0    0.00    0.00  190696         bool __gnu_cxx::operator!=<std::string const*, std::vector<std::string, std::allocator<std::string> > >(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&) [33]
+                0.00    0.00  381392/381392      __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::base() const [26]
+-----------------------------------------------
+                0.00    0.00   53509/184580      std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [8]
+                0.00    0.00  131071/184580      std::move_iterator<std::string*>::operator*() const [38]
+[34]     0.0    0.00    0.00  184580         std::remove_reference<std::string&>::type&& std::move<std::string&>(std::string&) [34]
+-----------------------------------------------
+                0.00    0.00   68578/175626      NgramList::NgramList(int, WordList const&) [3]
+                0.00    0.00  107048/175626      NgramList::getNextNgram(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >) [7]
+[35]     0.0    0.00    0.00  175626         __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::operator++(int) [35]
+                0.00    0.00  175626/312784      __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::__normal_iterator(std::string const* const&) [28]
+-----------------------------------------------
+                0.00    0.00  137157/137157      NgramList::NgramList(int, WordList const&) [3]
+[36]     0.0    0.00    0.00  137157         std::vector<std::string, std::allocator<std::string> >::end() const [36]
+                0.00    0.00  137157/312784      __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::__normal_iterator(std::string const* const&) [28]
+-----------------------------------------------
+                0.00    0.00  131089/131089      bool std::operator!=<std::string*>(std::move_iterator<std::string*> const&, std::move_iterator<std::string*> const&) [16]
+[37]     0.0    0.00    0.00  131089         bool std::operator==<std::string*>(std::move_iterator<std::string*> const&, std::move_iterator<std::string*> const&) [37]
+                0.00    0.00  262178/262178      std::move_iterator<std::string*>::base() const [29]
+-----------------------------------------------
+                0.00    0.00  131071/131071      std::string* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*) [11]
+[38]     0.0    0.00    0.00  131071         std::move_iterator<std::string*>::operator*() const [38]
+                0.00    0.00  131071/184580      std::remove_reference<std::string&>::type&& std::move<std::string&>(std::string&) [34]
+-----------------------------------------------
+                0.00    0.00  131071/131071      std::string* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*) [11]
+[39]     0.0    0.00    0.00  131071         void std::_Construct<std::string, std::string>(std::string*, std::string&&) [39]
+                0.00    0.00  131071/131071      std::string&& std::forward<std::string>(std::remove_reference<std::string>::type&) [40]
+                0.00    0.00  131071/199649      operator new(unsigned long, void*) [32]
+-----------------------------------------------
+                0.00    0.00  131071/131071      void std::_Construct<std::string, std::string>(std::string*, std::string&&) [39]
+[40]     0.0    0.00    0.00  131071         std::string&& std::forward<std::string>(std::remove_reference<std::string>::type&) [40]
+-----------------------------------------------
+                0.00    0.00  122116/122116      NgramList::getNextNgram(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >) [7]
+[41]     0.0    0.00    0.00  122116         __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::operator*() const [41]
+-----------------------------------------------
+                0.00    0.00  107048/107048      NgramList::getNextNgram(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >) [7]
+[42]     0.0    0.00    0.00  107048         bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [42]
+-----------------------------------------------
+                0.00    0.00   68578/68578       _ZNSt16allocator_traitsISaISsEE12_S_constructISsIRKSsEEENSt9enable_ifIXsrNS1_18__construct_helperIT_IDpT0_EEE5valueEvE4typeERS0_PS7_DpOS8_ [44]
+[43]     0.0    0.00    0.00   68578         _ZN9__gnu_cxx13new_allocatorISsE9constructISsIRKSsEEEvPT_DpOT0_ [43]
+                0.00    0.00   68578/205752      std::string const& std::forward<std::string const&>(std::remove_reference<std::string const&>::type&) [30]
+                0.00    0.00   68578/199649      operator new(unsigned long, void*) [32]
+-----------------------------------------------
+                0.00    0.00   68578/68578       decltype (_S_construct({parm#1}, {parm#2}, (forward<std::string const&>)({parm#3}))) std::allocator_traits<std::allocator<std::string> >::construct<std::string, std::string const&>(std::allocator<std::string>&, std::string*, std::string const&) [45]
+[44]     0.0    0.00    0.00   68578         _ZNSt16allocator_traitsISaISsEE12_S_constructISsIRKSsEEENSt9enable_ifIXsrNS1_18__construct_helperIT_IDpT0_EEE5valueEvE4typeERS0_PS7_DpOS8_ [44]
+                0.00    0.00   68578/205752      std::string const& std::forward<std::string const&>(std::remove_reference<std::string const&>::type&) [30]
+                0.00    0.00   68578/68578       _ZN9__gnu_cxx13new_allocatorISsE9constructISsIRKSsEEEvPT_DpOT0_ [43]
+-----------------------------------------------
+                0.00    0.00      18/68578       void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) [12]
+                0.00    0.00   68560/68578       std::vector<std::string, std::allocator<std::string> >::push_back(std::string const&) [10]
+[45]     0.0    0.00    0.00   68578         decltype (_S_construct({parm#1}, {parm#2}, (forward<std::string const&>)({parm#3}))) std::allocator_traits<std::allocator<std::string> >::construct<std::string, std::string const&>(std::allocator<std::string>&, std::string*, std::string const&) [45]
+                0.00    0.00   68578/205752      std::string const& std::forward<std::string const&>(std::remove_reference<std::string const&>::type&) [30]
+                0.00    0.00   68578/68578       _ZNSt16allocator_traitsISaISsEE12_S_constructISsIRKSsEEENSt9enable_ifIXsrNS1_18__construct_helperIT_IDpT0_EEE5valueEvE4typeERS0_PS7_DpOS8_ [44]
+-----------------------------------------------
+                0.00    0.00   53509/53509       NgramList::insertNgram(std::string) [4]
+[46]     0.0    0.00    0.00   53509         NgramList::Ngram::Ngram() [46]
+-----------------------------------------------
+                0.00    0.00   20269/53509       NgramList::insertNgram(std::string) [4]
+                0.00    0.00   33240/53509       NgramList::~NgramList() [75]
+[47]     0.0    0.00    0.00   53509         NgramList::Ngram::~Ngram() [47]
+-----------------------------------------------
+                0.00    0.00   53509/53509       NgramList::getNextNgram(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >) [7]
+[48]     0.0    0.00    0.00   53509         std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [48]
+-----------------------------------------------
+                0.00    0.00      18/90          void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) [12]
+                0.00    0.00      72/90          std::vector<std::string, std::allocator<std::string> >::_M_check_len(unsigned long, char const*) const [64]
+[49]     0.0    0.00    0.00      90         std::vector<std::string, std::allocator<std::string> >::size() const [49]
+-----------------------------------------------
+                0.00    0.00      18/54          __gnu_cxx::new_allocator<std::string>::allocate(unsigned long, void const*) [63]
+                0.00    0.00      36/54          std::enable_if<std::allocator_traits<std::allocator<std::string> >::__maxsize_helper<std::allocator<std::string> const>::value, unsigned long>::type std::allocator_traits<std::allocator<std::string> >::_S_max_size<std::allocator<std::string> const>(std::allocator<std::string> const&) [55]
+[50]     0.0    0.00    0.00      54         __gnu_cxx::new_allocator<std::string>::max_size() const [50]
+-----------------------------------------------
+                0.00    0.00       1/37          std::vector<std::string, std::allocator<std::string> >::~vector() [86]
+                0.00    0.00      36/37          void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) [12]
+[51]     0.0    0.00    0.00      37         std::_Vector_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() [51]
+-----------------------------------------------
+                0.00    0.00      36/36          std::vector<std::string, std::allocator<std::string> >::max_size() const [53]
+[52]     0.0    0.00    0.00      36         std::_Vector_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() const [52]
+-----------------------------------------------
+                0.00    0.00      36/36          std::vector<std::string, std::allocator<std::string> >::_M_check_len(unsigned long, char const*) const [64]
+[53]     0.0    0.00    0.00      36         std::vector<std::string, std::allocator<std::string> >::max_size() const [53]
+                0.00    0.00      36/36          std::allocator_traits<std::allocator<std::string> >::max_size(std::allocator<std::string> const&) [56]
+                0.00    0.00      36/36          std::_Vector_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() const [52]
+-----------------------------------------------
+                0.00    0.00      36/36          std::move_iterator<std::string*> std::__make_move_if_noexcept_iterator<std::string*, std::move_iterator<std::string*> >(std::string*) [57]
+[54]     0.0    0.00    0.00      36         std::move_iterator<std::string*>::move_iterator(std::string*) [54]
+-----------------------------------------------
+                0.00    0.00      36/36          std::allocator_traits<std::allocator<std::string> >::max_size(std::allocator<std::string> const&) [56]
+[55]     0.0    0.00    0.00      36         std::enable_if<std::allocator_traits<std::allocator<std::string> >::__maxsize_helper<std::allocator<std::string> const>::value, unsigned long>::type std::allocator_traits<std::allocator<std::string> >::_S_max_size<std::allocator<std::string> const>(std::allocator<std::string> const&) [55]
+                0.00    0.00      36/54          __gnu_cxx::new_allocator<std::string>::max_size() const [50]
+-----------------------------------------------
+                0.00    0.00      36/36          std::vector<std::string, std::allocator<std::string> >::max_size() const [53]
+[56]     0.0    0.00    0.00      36         std::allocator_traits<std::allocator<std::string> >::max_size(std::allocator<std::string> const&) [56]
+                0.00    0.00      36/36          std::enable_if<std::allocator_traits<std::allocator<std::string> >::__maxsize_helper<std::allocator<std::string> const>::value, unsigned long>::type std::allocator_traits<std::allocator<std::string> >::_S_max_size<std::allocator<std::string> const>(std::allocator<std::string> const&) [55]
+-----------------------------------------------
+                0.00    0.00      36/36          std::string* std::__uninitialized_move_if_noexcept_a<std::string*, std::string*, std::allocator<std::string> >(std::string*, std::string*, std::string*, std::allocator<std::string>&) [15]
+[57]     0.0    0.00    0.00      36         std::move_iterator<std::string*> std::__make_move_if_noexcept_iterator<std::string*, std::move_iterator<std::string*> >(std::string*) [57]
+                0.00    0.00      36/36          std::move_iterator<std::string*>::move_iterator(std::string*) [54]
+-----------------------------------------------
+                0.00    0.00      19/19          void std::_Destroy<std::string*>(std::string*, std::string*) [60]
+[58]     0.0    0.00    0.00      19         void std::_Destroy_aux<false>::__destroy<std::string*>(std::string*, std::string*) [58]
+                0.00    0.00  199649/199649      void std::_Destroy<std::string>(std::string*) [31]
+                0.00    0.00  199649/330720      std::string* std::__addressof<std::string>(std::string&) [27]
+-----------------------------------------------
+                0.00    0.00       1/19          std::_Vector_base<std::string, std::allocator<std::string> >::~_Vector_base() [84]
+                0.00    0.00      18/19          void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) [12]
+[59]     0.0    0.00    0.00      19         std::_Vector_base<std::string, std::allocator<std::string> >::_M_deallocate(std::string*, unsigned long) [59]
+                0.00    0.00      18/18          __gnu_cxx::new_allocator<std::string>::deallocate(std::string*, unsigned long) [62]
+-----------------------------------------------
+                0.00    0.00      19/19          void std::_Destroy<std::string*, std::string>(std::string*, std::string*, std::allocator<std::string>&) [61]
+[60]     0.0    0.00    0.00      19         void std::_Destroy<std::string*>(std::string*, std::string*) [60]
+                0.00    0.00      19/19          void std::_Destroy_aux<false>::__destroy<std::string*>(std::string*, std::string*) [58]
+-----------------------------------------------
+                0.00    0.00       1/19          std::vector<std::string, std::allocator<std::string> >::~vector() [86]
+                0.00    0.00      18/19          void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) [12]
+[61]     0.0    0.00    0.00      19         void std::_Destroy<std::string*, std::string>(std::string*, std::string*, std::allocator<std::string>&) [61]
+                0.00    0.00      19/19          void std::_Destroy<std::string*>(std::string*, std::string*) [60]
+-----------------------------------------------
+                0.00    0.00      18/18          std::_Vector_base<std::string, std::allocator<std::string> >::_M_deallocate(std::string*, unsigned long) [59]
+[62]     0.0    0.00    0.00      18         __gnu_cxx::new_allocator<std::string>::deallocate(std::string*, unsigned long) [62]
+-----------------------------------------------
+                0.00    0.00      18/18          std::_Vector_base<std::string, std::allocator<std::string> >::_M_allocate(unsigned long) [65]
+[63]     0.0    0.00    0.00      18         __gnu_cxx::new_allocator<std::string>::allocate(unsigned long, void const*) [63]
+                0.00    0.00      18/54          __gnu_cxx::new_allocator<std::string>::max_size() const [50]
+-----------------------------------------------
+                0.00    0.00      18/18          void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) [12]
+[64]     0.0    0.00    0.00      18         std::vector<std::string, std::allocator<std::string> >::_M_check_len(unsigned long, char const*) const [64]
+                0.00    0.00      72/90          std::vector<std::string, std::allocator<std::string> >::size() const [49]
+                0.00    0.00      36/36          std::vector<std::string, std::allocator<std::string> >::max_size() const [53]
+                0.00    0.00      18/18          unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [66]
+-----------------------------------------------
+                0.00    0.00      18/18          void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&) [12]
+[65]     0.0    0.00    0.00      18         std::_Vector_base<std::string, std::allocator<std::string> >::_M_allocate(unsigned long) [65]
+                0.00    0.00      18/18          __gnu_cxx::new_allocator<std::string>::allocate(unsigned long, void const*) [63]
+-----------------------------------------------
+                0.00    0.00      18/18          std::vector<std::string, std::allocator<std::string> >::_M_check_len(unsigned long, char const*) const [64]
+[66]     0.0    0.00    0.00      18         unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [66]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [19]
+[67]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN8WordListC2Ev [67]
                 0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [70]
 -----------------------------------------------
-                0.00    0.00       1/1           _GLOBAL__sub_I__ZN9NgramListC2EiRK8WordList [7]
-[68]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [68]
+                0.00    0.00       1/1           __libc_csu_init [19]
+[68]     0.0    0.00    0.00       1         _GLOBAL__sub_I_main [68]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [71]
 -----------------------------------------------
-                0.00    0.00       1/1           _GLOBAL__sub_I__ZN8WordListC2Ev [66]
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN9NgramListC2EiRK8WordList [18]
 [69]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [69]
 -----------------------------------------------
-                0.00    0.00       1/1           _GLOBAL__sub_I_main [67]
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN8WordListC2Ev [67]
 [70]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [70]
 -----------------------------------------------
-                0.00    0.00       1/1           main [1]
-[71]     0.0    0.00    0.00       1         usage(int, char**, int&, std::string&) [71]
+                0.00    0.00       1/1           _GLOBAL__sub_I_main [68]
+[71]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [71]
 -----------------------------------------------
                 0.00    0.00       1/1           main [1]
-[72]     0.0    0.00    0.00       1         WordList::WordList() [72]
-                0.00    0.00       1/1           std::vector<std::string, std::allocator<std::string> >::vector() [84]
+[72]     0.0    0.00    0.00       1         usage(int, char**, int&, std::string&) [72]
 -----------------------------------------------
                 0.00    0.00       1/1           main [1]
-[73]     0.0    0.00    0.00       1         WordList::~WordList() [73]
-                0.00    0.00       1/1           std::vector<std::string, std::allocator<std::string> >::~vector() [85]
+[73]     0.0    0.00    0.00       1         WordList::WordList() [73]
+                0.00    0.00       1/1           std::vector<std::string, std::allocator<std::string> >::vector() [85]
 -----------------------------------------------
                 0.00    0.00       1/1           main [1]
-[74]     0.0    0.00    0.00       1         NgramList::~NgramList() [74]
------------------------------------------------
-                0.00    0.00       1/1           std::allocator<std::string>::allocator() [78]
-[75]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::string>::new_allocator() [75]
------------------------------------------------
-                0.00    0.00       1/1           std::allocator<std::string>::~allocator() [79]
-[76]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::string>::~new_allocator() [76]
------------------------------------------------
-                0.00    0.00       1/1           NgramList::NgramList(int, WordList const&) [4]
-[77]     0.0    0.00    0.00       1         std::vector<std::string, std::allocator<std::string> >::begin() const [77]
-                0.00    0.00       1/312784      __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::__normal_iterator(std::string const* const&) [19]
------------------------------------------------
-                0.00    0.00       1/1           std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_impl::_Vector_impl() [80]
-[78]     0.0    0.00    0.00       1         std::allocator<std::string>::allocator() [78]
-                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::string>::new_allocator() [75]
------------------------------------------------
-                0.00    0.00       1/1           std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_impl::~_Vector_impl() [81]
-[79]     0.0    0.00    0.00       1         std::allocator<std::string>::~allocator() [79]
-                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::string>::~new_allocator() [76]
------------------------------------------------
-                0.00    0.00       1/1           std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_base() [82]
-[80]     0.0    0.00    0.00       1         std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_impl::_Vector_impl() [80]
-                0.00    0.00       1/1           std::allocator<std::string>::allocator() [78]
------------------------------------------------
-                0.00    0.00       1/1           std::_Vector_base<std::string, std::allocator<std::string> >::~_Vector_base() [83]
-[81]     0.0    0.00    0.00       1         std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_impl::~_Vector_impl() [81]
-                0.00    0.00       1/1           std::allocator<std::string>::~allocator() [79]
------------------------------------------------
-                0.00    0.00       1/1           std::vector<std::string, std::allocator<std::string> >::vector() [84]
-[82]     0.0    0.00    0.00       1         std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_base() [82]
-                0.00    0.00       1/1           std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_impl::_Vector_impl() [80]
------------------------------------------------
-                0.00    0.00       1/1           std::vector<std::string, std::allocator<std::string> >::~vector() [85]
-[83]     0.0    0.00    0.00       1         std::_Vector_base<std::string, std::allocator<std::string> >::~_Vector_base() [83]
-                0.00    0.00       1/1           std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_impl::~_Vector_impl() [81]
-                0.00    0.00       1/19          std::_Vector_base<std::string, std::allocator<std::string> >::_M_deallocate(std::string*, unsigned long) [53]
------------------------------------------------
-                0.00    0.00       1/1           WordList::WordList() [72]
-[84]     0.0    0.00    0.00       1         std::vector<std::string, std::allocator<std::string> >::vector() [84]
-                0.00    0.00       1/1           std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_base() [82]
------------------------------------------------
-                0.00    0.00       1/1           WordList::~WordList() [73]
-[85]     0.0    0.00    0.00       1         std::vector<std::string, std::allocator<std::string> >::~vector() [85]
-                0.00    0.00       1/37          std::_Vector_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() [45]
-                0.00    0.00       1/19          void std::_Destroy<std::string*, std::string>(std::string*, std::string*, std::allocator<std::string>&) [55]
-                0.00    0.00       1/1           std::_Vector_base<std::string, std::allocator<std::string> >::~_Vector_base() [83]
+[74]     0.0    0.00    0.00       1         WordList::~WordList() [74]
+                0.00    0.00       1/1           std::vector<std::string, std::allocator<std::string> >::~vector() [86]
 -----------------------------------------------
                 0.00    0.00       1/1           main [1]
-[86]     0.0    0.00    0.00       1         operator<<(std::ostream&, NgramList const&) [86]
+[75]     0.0    0.00    0.00       1         NgramList::~NgramList() [75]
+                0.00    0.00   33240/53509       NgramList::Ngram::~Ngram() [47]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<std::string>::allocator() [79]
+[76]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::string>::new_allocator() [76]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<std::string>::~allocator() [80]
+[77]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::string>::~new_allocator() [77]
+-----------------------------------------------
+                0.00    0.00       1/1           NgramList::NgramList(int, WordList const&) [3]
+[78]     0.0    0.00    0.00       1         std::vector<std::string, std::allocator<std::string> >::begin() const [78]
+                0.00    0.00       1/312784      __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::__normal_iterator(std::string const* const&) [28]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_impl::_Vector_impl() [81]
+[79]     0.0    0.00    0.00       1         std::allocator<std::string>::allocator() [79]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::string>::new_allocator() [76]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_impl::~_Vector_impl() [82]
+[80]     0.0    0.00    0.00       1         std::allocator<std::string>::~allocator() [80]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::string>::~new_allocator() [77]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_base() [83]
+[81]     0.0    0.00    0.00       1         std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_impl::_Vector_impl() [81]
+                0.00    0.00       1/1           std::allocator<std::string>::allocator() [79]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::string, std::allocator<std::string> >::~_Vector_base() [84]
+[82]     0.0    0.00    0.00       1         std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_impl::~_Vector_impl() [82]
+                0.00    0.00       1/1           std::allocator<std::string>::~allocator() [80]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::string, std::allocator<std::string> >::vector() [85]
+[83]     0.0    0.00    0.00       1         std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_base() [83]
+                0.00    0.00       1/1           std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_impl::_Vector_impl() [81]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::string, std::allocator<std::string> >::~vector() [86]
+[84]     0.0    0.00    0.00       1         std::_Vector_base<std::string, std::allocator<std::string> >::~_Vector_base() [84]
+                0.00    0.00       1/19          std::_Vector_base<std::string, std::allocator<std::string> >::_M_deallocate(std::string*, unsigned long) [59]
+                0.00    0.00       1/1           std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_impl::~_Vector_impl() [82]
+-----------------------------------------------
+                0.00    0.00       1/1           WordList::WordList() [73]
+[85]     0.0    0.00    0.00       1         std::vector<std::string, std::allocator<std::string> >::vector() [85]
+                0.00    0.00       1/1           std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_base() [83]
+-----------------------------------------------
+                0.00    0.00       1/1           WordList::~WordList() [74]
+[86]     0.0    0.00    0.00       1         std::vector<std::string, std::allocator<std::string> >::~vector() [86]
+                0.00    0.00       1/37          std::_Vector_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() [51]
+                0.00    0.00       1/19          void std::_Destroy<std::string*, std::string>(std::string*, std::string*, std::allocator<std::string>&) [61]
+                0.00    0.00       1/1           std::_Vector_base<std::string, std::allocator<std::string> >::~_Vector_base() [84]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[87]     0.0    0.00    0.00       1         operator<<(std::ostream&, NgramList const&) [87]
 -----------------------------------------------
 
  This table describes the call tree of the program, and was sorted by
@@ -562,29 +569,30 @@ notice and this notice are preserved.
 
 Index by function name
 
-  [66] _GLOBAL__sub_I__ZN8WordListC2Ev (WordList.C) [34] __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::operator*() const [60] std::string* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*)
-   [7] _GLOBAL__sub_I__ZN9NgramListC2EiRK8WordList (NgramList.C) [46] std::_Vector_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() const [61] void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&)
-  [67] _GLOBAL__sub_I_main (main.C) [20] std::move_iterator<std::string*>::base() const [10] std::vector<std::string, std::allocator<std::string> >::push_back(std::string const&)
-  [68] __static_initialization_and_destruction_0(int, int) (NgramList.C) [30] std::move_iterator<std::string*>::operator*() const [84] std::vector<std::string, std::allocator<std::string> >::vector()
-  [69] __static_initialization_and_destruction_0(int, int) (WordList.C) [58] std::vector<std::string, std::allocator<std::string> >::_M_check_len(unsigned long, char const*) const [85] std::vector<std::string, std::allocator<std::string> >::~vector()
-  [70] __static_initialization_and_destruction_0(int, int) (main.C) [27] std::vector<std::string, std::allocator<std::string> >::end() const [32] void std::_Construct<std::string, std::string>(std::string*, std::string&&)
-  [71] usage(int, char**, int&, std::string&) [43] std::vector<std::string, std::allocator<std::string> >::size() const [18] std::string* std::__addressof<std::string>(std::string&)
-   [9] WordList::addWord(std::string) [77] std::vector<std::string, std::allocator<std::string> >::begin() const [62] std::string* std::uninitialized_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*)
-  [72] WordList::WordList()   [47] std::vector<std::string, std::allocator<std::string> >::max_size() const [63] std::string* std::__uninitialized_copy_a<std::move_iterator<std::string*>, std::string*, std::string>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*, std::allocator<std::string>&)
-  [73] WordList::~WordList()  [78] std::allocator<std::string>::allocator() [51] std::move_iterator<std::string*> std::__make_move_if_noexcept_iterator<std::string*, std::move_iterator<std::string*> >(std::string*)
-   [3] NgramList::insertNgram(std::string) [79] std::allocator<std::string>::~allocator() [64] std::string* std::__uninitialized_move_if_noexcept_a<std::string*, std::string*, std::allocator<std::string> >(std::string*, std::string*, std::string*, std::allocator<std::string>&)
-   [2] NgramList::sortByCount() [6] std::char_traits<char>::compare(char const*, char const*, unsigned long) [65] unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
-  [36] NgramList::getNextNgram(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >) [52] void std::_Destroy_aux<false>::__destroy<std::string*>(std::string*, std::string*) [25] std::remove_reference<std::string&>::type&& std::move<std::string&>(std::string&)
-  [40] NgramList::Ngram::Ngram() [59] std::_Vector_base<std::string, std::allocator<std::string> >::_M_allocate(unsigned long) [21] std::string const& std::forward<std::string const&>(std::remove_reference<std::string const&>::type&)
-   [4] NgramList::NgramList(int, WordList const&) [80] std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_impl::_Vector_impl() [33] std::string&& std::forward<std::string>(std::remove_reference<std::string>::type&)
-  [74] NgramList::~NgramList() [81] std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_impl::~_Vector_impl() [54] void std::_Destroy<std::string*>(std::string*, std::string*)
-  [56] __gnu_cxx::new_allocator<std::string>::deallocate(std::string*, unsigned long) [53] std::_Vector_base<std::string, std::allocator<std::string> >::_M_deallocate(std::string*, unsigned long) [55] void std::_Destroy<std::string*, std::string>(std::string*, std::string*, std::allocator<std::string>&)
-  [57] __gnu_cxx::new_allocator<std::string>::allocate(unsigned long, void const*) [45] std::_Vector_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() [22] void std::_Destroy<std::string>(std::string*)
-  [37] _ZN9__gnu_cxx13new_allocatorISsE9constructISsIRKSsEEEvPT_DpOT0_ [82] std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_base() [28] bool std::operator==<std::string*>(std::move_iterator<std::string*> const&, std::move_iterator<std::string*> const&)
-  [75] __gnu_cxx::new_allocator<std::string>::new_allocator() [83] std::_Vector_base<std::string, std::allocator<std::string> >::~_Vector_base() [5] __gnu_cxx::__enable_if<std::__is_char<char>::__value, bool>::__type std::operator==<char>(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
-  [76] __gnu_cxx::new_allocator<std::string>::~new_allocator() [48] std::move_iterator<std::string*>::move_iterator(std::string*) [35] bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
-  [19] __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::__normal_iterator(std::string const* const&) [31] std::move_iterator<std::string*>::operator++() [29] bool std::operator!=<std::string*>(std::move_iterator<std::string*> const&, std::move_iterator<std::string*> const&)
-  [26] __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::operator++(int) [49] std::enable_if<std::allocator_traits<std::allocator<std::string> >::__maxsize_helper<std::allocator<std::string> const>::value, unsigned long>::type std::allocator_traits<std::allocator<std::string> >::_S_max_size<std::allocator<std::string> const>(std::allocator<std::string> const&) [41] std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
-  [24] bool __gnu_cxx::operator!=<std::string const*, std::vector<std::string, std::allocator<std::string> > >(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&) [38] _ZNSt16allocator_traitsISaISsEE12_S_constructISsIRKSsEEENSt9enable_ifIXsrNS1_18__construct_helperIT_IDpT0_EEE5valueEvE4typeERS0_PS7_DpOS8_ [42] std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
-  [44] __gnu_cxx::new_allocator<std::string>::max_size() const [50] std::allocator_traits<std::allocator<std::string> >::max_size(std::allocator<std::string> const&) [86] operator<<(std::ostream&, NgramList const&)
-  [17] __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::base() const [39] decltype (_S_construct({parm#1}, {parm#2}, (forward<std::string const&>)({parm#3}))) std::allocator_traits<std::allocator<std::string> >::construct<std::string, std::string const&>(std::allocator<std::string>&, std::string*, std::string const&) [23] operator new(unsigned long, void*)
+  [67] _GLOBAL__sub_I__ZN8WordListC2Ev (WordList.C) [41] __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::operator*() const [12] void std::vector<std::string, std::allocator<std::string> >::_M_emplace_back_aux<std::string const&>(std::string const&)
+  [18] _GLOBAL__sub_I__ZN9NgramListC2EiRK8WordList (NgramList.C) [52] std::_Vector_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() const [10] std::vector<std::string, std::allocator<std::string> >::push_back(std::string const&)
+  [68] _GLOBAL__sub_I_main (main.C) [29] std::move_iterator<std::string*>::base() const [85] std::vector<std::string, std::allocator<std::string> >::vector()
+  [69] __static_initialization_and_destruction_0(int, int) (NgramList.C) [38] std::move_iterator<std::string*>::operator*() const [86] std::vector<std::string, std::allocator<std::string> >::~vector()
+  [70] __static_initialization_and_destruction_0(int, int) (WordList.C) [64] std::vector<std::string, std::allocator<std::string> >::_M_check_len(unsigned long, char const*) const [39] void std::_Construct<std::string, std::string>(std::string*, std::string&&)
+  [71] __static_initialization_and_destruction_0(int, int) (main.C) [36] std::vector<std::string, std::allocator<std::string> >::end() const [27] std::string* std::__addressof<std::string>(std::string&)
+  [72] usage(int, char**, int&, std::string&) [49] std::vector<std::string, std::allocator<std::string> >::size() const [13] std::string* std::uninitialized_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*)
+   [9] WordList::addWord(std::string) [78] std::vector<std::string, std::allocator<std::string> >::begin() const [14] std::string* std::__uninitialized_copy_a<std::move_iterator<std::string*>, std::string*, std::string>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*, std::allocator<std::string>&)
+  [73] WordList::WordList()   [53] std::vector<std::string, std::allocator<std::string> >::max_size() const [57] std::move_iterator<std::string*> std::__make_move_if_noexcept_iterator<std::string*, std::move_iterator<std::string*> >(std::string*)
+  [74] WordList::~WordList()  [79] std::allocator<std::string>::allocator() [15] std::string* std::__uninitialized_move_if_noexcept_a<std::string*, std::string*, std::allocator<std::string> >(std::string*, std::string*, std::string*, std::allocator<std::string>&)
+   [4] NgramList::insertNgram(std::string) [80] std::allocator<std::string>::~allocator() [66] unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+   [2] NgramList::sortByCount() [6] std::char_traits<char>::compare(char const*, char const*, unsigned long) [34] std::remove_reference<std::string&>::type&& std::move<std::string&>(std::string&)
+   [7] NgramList::getNextNgram(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >) [58] void std::_Destroy_aux<false>::__destroy<std::string*>(std::string*, std::string*) [30] std::string const& std::forward<std::string const&>(std::remove_reference<std::string const&>::type&)
+  [46] NgramList::Ngram::Ngram() [65] std::_Vector_base<std::string, std::allocator<std::string> >::_M_allocate(unsigned long) [40] std::string&& std::forward<std::string>(std::remove_reference<std::string>::type&)
+  [47] NgramList::Ngram::~Ngram() [81] std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_impl::_Vector_impl() [60] void std::_Destroy<std::string*>(std::string*, std::string*)
+   [3] NgramList::NgramList(int, WordList const&) [82] std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_impl::~_Vector_impl() [61] void std::_Destroy<std::string*, std::string>(std::string*, std::string*, std::allocator<std::string>&)
+  [75] NgramList::~NgramList() [59] std::_Vector_base<std::string, std::allocator<std::string> >::_M_deallocate(std::string*, unsigned long) [31] void std::_Destroy<std::string>(std::string*)
+  [62] __gnu_cxx::new_allocator<std::string>::deallocate(std::string*, unsigned long) [51] std::_Vector_base<std::string, std::allocator<std::string> >::_M_get_Tp_allocator() [37] bool std::operator==<std::string*>(std::move_iterator<std::string*> const&, std::move_iterator<std::string*> const&)
+  [63] __gnu_cxx::new_allocator<std::string>::allocate(unsigned long, void const*) [83] std::_Vector_base<std::string, std::allocator<std::string> >::_Vector_base() [5] __gnu_cxx::__enable_if<std::__is_char<char>::__value, bool>::__type std::operator==<char>(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  [43] _ZN9__gnu_cxx13new_allocatorISsE9constructISsIRKSsEEEvPT_DpOT0_ [84] std::_Vector_base<std::string, std::allocator<std::string> >::~_Vector_base() [42] bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
+  [76] __gnu_cxx::new_allocator<std::string>::new_allocator() [54] std::move_iterator<std::string*>::move_iterator(std::string*) [16] bool std::operator!=<std::string*>(std::move_iterator<std::string*> const&, std::move_iterator<std::string*> const&)
+  [77] __gnu_cxx::new_allocator<std::string>::~new_allocator() [17] std::move_iterator<std::string*>::operator++() [8] std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  [28] __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::__normal_iterator(std::string const* const&) [55] std::enable_if<std::allocator_traits<std::allocator<std::string> >::__maxsize_helper<std::allocator<std::string> const>::value, unsigned long>::type std::allocator_traits<std::allocator<std::string> >::_S_max_size<std::allocator<std::string> const>(std::allocator<std::string> const&) [48] std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
+  [35] __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::operator++(int) [44] _ZNSt16allocator_traitsISaISsEE12_S_constructISsIRKSsEEENSt9enable_ifIXsrNS1_18__construct_helperIT_IDpT0_EEE5valueEvE4typeERS0_PS7_DpOS8_ [87] operator<<(std::ostream&, NgramList const&)
+  [33] bool __gnu_cxx::operator!=<std::string const*, std::vector<std::string, std::allocator<std::string> > >(__gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&, __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > > const&) [56] std::allocator_traits<std::allocator<std::string> >::max_size(std::allocator<std::string> const&) [32] operator new(unsigned long, void*)
+  [50] __gnu_cxx::new_allocator<std::string>::max_size() const [45] decltype (_S_construct({parm#1}, {parm#2}, (forward<std::string const&>)({parm#3}))) std::allocator_traits<std::allocator<std::string> >::construct<std::string, std::string const&>(std::allocator<std::string>&, std::string*, std::string const&)
+  [26] __gnu_cxx::__normal_iterator<std::string const*, std::vector<std::string, std::allocator<std::string> > >::base() const [11] std::string* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::string*>, std::string*>(std::move_iterator<std::string*>, std::move_iterator<std::string*>, std::string*)
