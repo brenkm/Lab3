@@ -1,10 +1,9 @@
 /*
- * Name: Brennan Moody
- *
  * Name: Courtney Dixon
  *
+ * Name: Brennan Moody
+ *
  */
-
 
 #include <cstdlib>
 #include <iostream>
@@ -14,6 +13,7 @@
 #include <cstring>
 #include "WordList.h"
 #include "NgramList.h"
+#include <stdlib.h>
 
 using namespace std;
 

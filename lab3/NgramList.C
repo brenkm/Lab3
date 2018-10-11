@@ -1,11 +1,18 @@
-
 #include <iostream>
 #include <string>
 #include <vector>
 #include "WordList.h"
 #include "NgramList.h"
+#include <stdlib.h>
+#include <map>
 
 using namespace std;
+
+//way to more effectively store ngrams
+map<string, int> ngramStorage;				//https://www.hackerrank.com/challenges/cpp-maps/problem
+
+//way to more effectively sort ngrams
+multimap<int, string> ngramStorageSorted;		
 
 /*
  * NgramList
@@ -44,7 +51,7 @@ NgramList::~NgramList()
    {
       nextNgram = first->next;
       //free(first);
-      delete first;              //wrong freeing method used because first is an object not a variable
+	  delete first;			//THE WRONG MEMORY FREEING METHOD WAS USED BECAUSE first IS AN OBJECT NOT A VARIABLE
       first = nextNgram;
    }
 }
@@ -103,13 +110,74 @@ std::string NgramList::getNextNgram(WordList::const_iterator start,
 /*
  * insertNgram
  *
+ * checks to see if Ngram already exists. If it does then count gets
+ * incremented by one. If it does not then the Ngram is put into the 
+ * map of Ngrams.
+ *
+ * param: std::string s - ngram to be inserted
+ * return: none
+ */
+void NgramList::insertNgram(std::string s)
+{
+	/*checks to see if Ngram already exists*/
+	std::map<string, int>::iterator iter = ngramStorage.find(s);		//https://www.hackerrank.com/challenges/cpp-maps/problem
+	
+	/*it does exist so, count is incremented by one*/
+	if(iter != ngramStorage.end()){iter->second++;}						//https://www.hackerrank.com/challenges/cpp-maps/problem
+	
+	/*it does not exist so, Ngram is added to map and count is one*/
+	ngramStorage.insert(make_pair(s, 1));								//https://www.hackerrank.com/challenges/cpp-maps/problem
+}
+
+/*
+ * sortByCount
+ *
+ * sorts the Ngrams in the map by count into a multimap 
+ *
+ * param: none
+ * return: none
+ */
+void NgramList::sortByCount()
+{
+	//http://www.cplusplus.com/reference/map/multimap/
+	for (auto iter1 = ngramStorage.begin(); iter1 != ngramStorage.end(); ++iter1)
+	{
+		ngramStorageSorted.insert(make_pair(iter1->second, iter1->first));
+	}
+	
+}
+
+/*
+ * operator<<
+ *
+ * prints the ngrams from the multimap
+ *
+ * param: std::ostream & os - output stream to direct the output to
+ * param: const NgramList & nglst - ngram list object
+ * return: std::ostream & - output stream
+ */  
+std::ostream& operator<<(std::ostream& os, const NgramList & nglst)
+{
+    cout << "List of " << nglst.ngramSz << " word ngrams and counts\n";
+    cout << "--------------------------------\n";
+	
+	for (auto iter2 = ngramStorageSorted.rbegin(); iter2 != ngramStorageSorted.rend(); ++iter2)
+	{
+		std::cout << iter2->second << " " << iter2->first << "\n";
+	}
+}
+
+
+/*-------------------------ORIGINAL METHOD--------------------------
+ * insertNgram
+ *
  * looks for the ngram to be inserted. If it is already in
  * the linked list,  it increments the count. If not, it 
  * inserts it into the linked list.
  *
  * param: std::string s - ngram to be inserted
  * return: none
- */
+ *
 void NgramList::insertNgram(std::string s)
 {
    Ngram_t * ptr = first;
@@ -123,7 +191,7 @@ void NgramList::insertNgram(std::string s)
       if (ptr->ngram == s) 
       {
          ptr->count++;
-         delete newNode;
+		 delete newNode;	//memory allocated and not in use
          return;
       }
       ptr = ptr->next;
@@ -131,10 +199,9 @@ void NgramList::insertNgram(std::string s)
    //insert in front of list
    newNode->next = first;
    first = newNode;
-}
+}------------------------------------------------------------------*/
 
-
-/*
+/*-------------------------ORIGINAL METHOD---------------------------
  * sortByCount
  *
  * performs a bubble sort on the linked list of ngrams, sorting the
@@ -142,7 +209,7 @@ void NgramList::insertNgram(std::string s)
  *
  * param: none
  * return: none (modfied private linked list)
- */
+ 
 void NgramList::sortByCount()
 {
    Ngram_t * ptr = first;
@@ -171,9 +238,9 @@ void NgramList::sortByCount()
       }
       ptr = ptr->next;
    }
-}
+}--------------------------------------------------------------------*/
 
-/*
+/*-------------------------ORIGINAL METHOD----------------------------
  * operator<<
  *
  * prints the list of ngrams
@@ -181,7 +248,7 @@ void NgramList::sortByCount()
  * param: std::ostream & os - output stream to direct the output to
  * param: const NgramList & nglst - ngram list object
  * return: std::ostream & - output stream
- */  
+ *  
 std::ostream& operator<<(std::ostream& os, const NgramList & nglst)
 {
    cout << "List of " << nglst.ngramSz << " word ngrams and counts\n";
@@ -193,4 +260,7 @@ std::ostream& operator<<(std::ostream& os, const NgramList & nglst)
       ptr = ptr->next;
    } 
    return os;
-}
+}------------------------------------------------------------------*/
+
+
+

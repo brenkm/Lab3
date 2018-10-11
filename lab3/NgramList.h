@@ -1,3 +1,6 @@
+#include <stdlib.h>
+
+using namespace std;
 
 class NgramList 
 {
